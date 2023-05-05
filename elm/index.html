@@ -1,4 +1,6 @@
-
+<!DOCTYPE HTML>
+<html><head><meta charset="UTF-8"><title>Main</title><style>html,head,body { padding:0; margin:0; }
+body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
 (function() {
 'use strict';
 
@@ -134,7 +136,6 @@ function A9(fun, a, b, c, d, e, f, g, h, i)
     ? fun.func(a, b, c, d, e, f, g, h, i)
     : fun(a)(b)(c)(d)(e)(f)(g)(h)(i);
 }
-
 //import Native.List //
 
 var _elm_lang$core$Native_Array = function() {
@@ -1101,8 +1102,7 @@ return {
 	fromJSArray: fromJSArray
 };
 
-}();
-//import Native.Utils //
+}();//import Native.Utils //
 
 var _elm_lang$core$Native_Basics = function() {
 
@@ -1242,8 +1242,7 @@ return {
 	isInfinite: isInfinite
 };
 
-}();
-//import //
+}();//import //
 
 var _elm_lang$core$Native_Utils = function() {
 
@@ -1730,8 +1729,7 @@ return {
 	toString: toString
 };
 
-}();
-var _elm_lang$core$Basics$never = function (_p0) {
+}();var _elm_lang$core$Basics$never = function (_p0) {
 	never:
 	while (true) {
 		var _p1 = _p0;
@@ -1856,7 +1854,6 @@ var _elm_lang$core$Basics$LT = {ctor: 'LT'};
 var _elm_lang$core$Basics$JustOneMore = function (a) {
 	return {ctor: 'JustOneMore', _0: a};
 };
-
 var _elm_lang$core$Maybe$withDefault = F2(
 	function ($default, maybe) {
 		var _p0 = maybe;
@@ -1929,7 +1926,6 @@ var _elm_lang$core$Maybe$map5 = F6(
 			return _elm_lang$core$Maybe$Nothing;
 		}
 	});
-
 //import Native.Utils //
 
 var _elm_lang$core$Native_List = function() {
@@ -2066,8 +2062,7 @@ return {
 	sortWith: F2(sortWith)
 };
 
-}();
-var _elm_lang$core$List$sortWith = _elm_lang$core$Native_List.sortWith;
+}();var _elm_lang$core$List$sortWith = _elm_lang$core$Native_List.sortWith;
 var _elm_lang$core$List$sortBy = _elm_lang$core$Native_List.sortBy;
 var _elm_lang$core$List$sort = function (xs) {
 	return A2(_elm_lang$core$List$sortBy, _elm_lang$core$Basics$identity, xs);
@@ -2619,7 +2614,6 @@ var _elm_lang$core$List$indexedMap = F2(
 				_elm_lang$core$List$length(xs) - 1),
 			xs);
 	});
-
 var _elm_lang$core$Array$append = _elm_lang$core$Native_Array.append;
 var _elm_lang$core$Array$length = _elm_lang$core$Native_Array.length;
 var _elm_lang$core$Array$isEmpty = function (array) {
@@ -2674,7 +2668,6 @@ var _elm_lang$core$Array$repeat = F2(
 			_elm_lang$core$Basics$always(e));
 	});
 var _elm_lang$core$Array$Array = {ctor: 'Array'};
-
 //import Native.Utils //
 
 var _elm_lang$core$Native_Char = function() {
@@ -2688,8 +2681,7 @@ return {
 	toLocaleLower: function(c) { return _elm_lang$core$Native_Utils.chr(c.toLocaleLowerCase()); }
 };
 
-}();
-var _elm_lang$core$Char$fromCode = _elm_lang$core$Native_Char.fromCode;
+}();var _elm_lang$core$Char$fromCode = _elm_lang$core$Native_Char.fromCode;
 var _elm_lang$core$Char$toCode = _elm_lang$core$Native_Char.toCode;
 var _elm_lang$core$Char$toLocaleLower = _elm_lang$core$Native_Char.toLocaleLower;
 var _elm_lang$core$Char$toLocaleUpper = _elm_lang$core$Native_Char.toLocaleUpper;
@@ -2731,7 +2723,6 @@ var _elm_lang$core$Char$isHexDigit = function ($char) {
 		_elm_lang$core$Native_Utils.chr('F'),
 		$char));
 };
-
 //import Native.Utils //
 
 var _elm_lang$core$Native_Scheduler = function() {
@@ -3012,8 +3003,7 @@ return {
 	rawSend: rawSend
 };
 
-}();
-//import //
+}();//import //
 
 var _elm_lang$core$Native_Platform = function() {
 
@@ -3572,7 +3562,6 @@ return {
 };
 
 }();
-
 var _elm_lang$core$Platform_Cmd$batch = _elm_lang$core$Native_Platform.batch;
 var _elm_lang$core$Platform_Cmd$none = _elm_lang$core$Platform_Cmd$batch(
 	{ctor: '[]'});
@@ -3587,13 +3576,11 @@ _elm_lang$core$Platform_Cmd_ops['!'] = F2(
 	});
 var _elm_lang$core$Platform_Cmd$map = _elm_lang$core$Native_Platform.map;
 var _elm_lang$core$Platform_Cmd$Cmd = {ctor: 'Cmd'};
-
 var _elm_lang$core$Platform_Sub$batch = _elm_lang$core$Native_Platform.batch;
 var _elm_lang$core$Platform_Sub$none = _elm_lang$core$Platform_Sub$batch(
 	{ctor: '[]'});
 var _elm_lang$core$Platform_Sub$map = _elm_lang$core$Native_Platform.map;
 var _elm_lang$core$Platform_Sub$Sub = {ctor: 'Sub'};
-
 var _elm_lang$core$Platform$hack = _elm_lang$core$Native_Scheduler.succeed;
 var _elm_lang$core$Platform$sendToSelf = _elm_lang$core$Native_Platform.sendToSelf;
 var _elm_lang$core$Platform$sendToApp = _elm_lang$core$Native_Platform.sendToApp;
@@ -3603,7 +3590,6 @@ var _elm_lang$core$Platform$Program = {ctor: 'Program'};
 var _elm_lang$core$Platform$Task = {ctor: 'Task'};
 var _elm_lang$core$Platform$ProcessId = {ctor: 'ProcessId'};
 var _elm_lang$core$Platform$Router = {ctor: 'Router'};
-
 var _elm_lang$core$Result$toMaybe = function (result) {
 	var _p0 = result;
 	if (_p0.ctor === 'Ok') {
@@ -3745,7 +3731,6 @@ var _elm_lang$core$Result$fromMaybe = F2(
 			return _elm_lang$core$Result$Err(err);
 		}
 	});
-
 //import Native.Utils //
 
 var _elm_lang$core$Native_Debug = function() {
@@ -3775,8 +3760,7 @@ return {
 	log: F2(log)
 };
 
-}();
-//import Maybe, Native.List, Native.Utils, Result //
+}();//import Maybe, Native.List, Native.Utils, Result //
 
 var _elm_lang$core$Native_String = function() {
 
@@ -4115,7 +4099,6 @@ return {
 };
 
 }();
-
 var _elm_lang$core$String$fromList = _elm_lang$core$Native_String.fromList;
 var _elm_lang$core$String$toList = _elm_lang$core$Native_String.toList;
 var _elm_lang$core$String$toFloat = _elm_lang$core$Native_String.toFloat;
@@ -4159,7 +4142,6 @@ var _elm_lang$core$String$fromChar = function ($char) {
 	return A2(_elm_lang$core$String$cons, $char, '');
 };
 var _elm_lang$core$String$isEmpty = _elm_lang$core$Native_String.isEmpty;
-
 var _elm_lang$core$Dict$foldr = F3(
 	function (f, acc, t) {
 		foldr:
@@ -5076,10 +5058,8 @@ var _elm_lang$core$Dict$diff = F2(
 			t1,
 			t2);
 	});
-
 var _elm_lang$core$Debug$crash = _elm_lang$core$Native_Debug.crash;
 var _elm_lang$core$Debug$log = _elm_lang$core$Native_Debug.log;
-
 //import Maybe, Native.Array, Native.List, Native.Utils, Result //
 
 var _elm_lang$core$Native_Json = function() {
@@ -5655,7 +5635,6 @@ return {
 };
 
 }();
-
 var _elm_lang$core$Json_Encode$list = _elm_lang$core$Native_Json.encodeList;
 var _elm_lang$core$Json_Encode$array = _elm_lang$core$Native_Json.encodeArray;
 var _elm_lang$core$Json_Encode$object = _elm_lang$core$Native_Json.encodeObject;
@@ -5666,7 +5645,6 @@ var _elm_lang$core$Json_Encode$int = _elm_lang$core$Native_Json.identity;
 var _elm_lang$core$Json_Encode$string = _elm_lang$core$Native_Json.identity;
 var _elm_lang$core$Json_Encode$encode = _elm_lang$core$Native_Json.encode;
 var _elm_lang$core$Json_Encode$Value = {ctor: 'Value'};
-
 var _elm_lang$core$Json_Decode$null = _elm_lang$core$Native_Json.decodeNull;
 var _elm_lang$core$Json_Decode$value = _elm_lang$core$Native_Json.decodePrimitive('value');
 var _elm_lang$core$Json_Decode$andThen = _elm_lang$core$Native_Json.andThen;
@@ -5729,7 +5707,6 @@ var _elm_lang$core$Json_Decode$int = _elm_lang$core$Native_Json.decodePrimitive(
 var _elm_lang$core$Json_Decode$bool = _elm_lang$core$Native_Json.decodePrimitive('bool');
 var _elm_lang$core$Json_Decode$string = _elm_lang$core$Native_Json.decodePrimitive('string');
 var _elm_lang$core$Json_Decode$Decoder = {ctor: 'Decoder'};
-
 var _elm_lang$core$Tuple$mapSecond = F2(
 	function (func, _p0) {
 		var _p1 = _p0;
@@ -5756,7 +5733,6 @@ var _elm_lang$core$Tuple$first = function (_p6) {
 	var _p7 = _p6;
 	return _p7._0;
 };
-
 var _elm_lang$virtual_dom$VirtualDom_Debug$wrap;
 var _elm_lang$virtual_dom$VirtualDom_Debug$wrapWithFlags;
 
@@ -7638,7 +7614,6 @@ return {
 };
 
 }();
-
 var _elm_lang$virtual_dom$VirtualDom$programWithFlags = function (impl) {
 	return A2(_elm_lang$virtual_dom$Native_VirtualDom.programWithFlags, _elm_lang$virtual_dom$VirtualDom_Debug$wrapWithFlags, impl);
 };
@@ -7669,7 +7644,6 @@ var _elm_lang$virtual_dom$VirtualDom$Options = F2(
 	});
 var _elm_lang$virtual_dom$VirtualDom$Node = {ctor: 'Node'};
 var _elm_lang$virtual_dom$VirtualDom$Property = {ctor: 'Property'};
-
 var _elm_lang$html$Html$programWithFlags = _elm_lang$virtual_dom$VirtualDom$programWithFlags;
 var _elm_lang$html$Html$program = _elm_lang$virtual_dom$VirtualDom$program;
 var _elm_lang$html$Html$beginnerProgram = function (_p0) {
@@ -7794,10 +7768,3648 @@ var _elm_lang$html$Html$details = _elm_lang$html$Html$node('details');
 var _elm_lang$html$Html$summary = _elm_lang$html$Html$node('summary');
 var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
-
-var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
-	_elm_lang$html$Html$text('Hello, World!'));
-
+var _elm_lang$html$Html_Attributes$map = _elm_lang$virtual_dom$VirtualDom$mapProperty;
+var _elm_lang$html$Html_Attributes$attribute = _elm_lang$virtual_dom$VirtualDom$attribute;
+var _elm_lang$html$Html_Attributes$contextmenu = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'contextmenu', value);
+};
+var _elm_lang$html$Html_Attributes$draggable = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'draggable', value);
+};
+var _elm_lang$html$Html_Attributes$itemprop = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'itemprop', value);
+};
+var _elm_lang$html$Html_Attributes$tabindex = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'tabIndex',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$charset = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'charset', value);
+};
+var _elm_lang$html$Html_Attributes$height = function (value) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'height',
+		_elm_lang$core$Basics$toString(value));
+};
+var _elm_lang$html$Html_Attributes$width = function (value) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'width',
+		_elm_lang$core$Basics$toString(value));
+};
+var _elm_lang$html$Html_Attributes$formaction = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'formAction', value);
+};
+var _elm_lang$html$Html_Attributes$list = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'list', value);
+};
+var _elm_lang$html$Html_Attributes$minlength = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'minLength',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$maxlength = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'maxlength',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$size = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'size',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$form = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'form', value);
+};
+var _elm_lang$html$Html_Attributes$cols = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'cols',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$rows = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'rows',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$challenge = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'challenge', value);
+};
+var _elm_lang$html$Html_Attributes$media = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'media', value);
+};
+var _elm_lang$html$Html_Attributes$rel = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'rel', value);
+};
+var _elm_lang$html$Html_Attributes$datetime = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'datetime', value);
+};
+var _elm_lang$html$Html_Attributes$pubdate = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'pubdate', value);
+};
+var _elm_lang$html$Html_Attributes$colspan = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'colspan',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$rowspan = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$attribute,
+		'rowspan',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$manifest = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$attribute, 'manifest', value);
+};
+var _elm_lang$html$Html_Attributes$property = _elm_lang$virtual_dom$VirtualDom$property;
+var _elm_lang$html$Html_Attributes$stringProperty = F2(
+	function (name, string) {
+		return A2(
+			_elm_lang$html$Html_Attributes$property,
+			name,
+			_elm_lang$core$Json_Encode$string(string));
+	});
+var _elm_lang$html$Html_Attributes$class = function (name) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'className', name);
+};
+var _elm_lang$html$Html_Attributes$id = function (name) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'id', name);
+};
+var _elm_lang$html$Html_Attributes$title = function (name) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'title', name);
+};
+var _elm_lang$html$Html_Attributes$accesskey = function ($char) {
+	return A2(
+		_elm_lang$html$Html_Attributes$stringProperty,
+		'accessKey',
+		_elm_lang$core$String$fromChar($char));
+};
+var _elm_lang$html$Html_Attributes$dir = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'dir', value);
+};
+var _elm_lang$html$Html_Attributes$dropzone = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'dropzone', value);
+};
+var _elm_lang$html$Html_Attributes$lang = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'lang', value);
+};
+var _elm_lang$html$Html_Attributes$content = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'content', value);
+};
+var _elm_lang$html$Html_Attributes$httpEquiv = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'httpEquiv', value);
+};
+var _elm_lang$html$Html_Attributes$language = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'language', value);
+};
+var _elm_lang$html$Html_Attributes$src = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'src', value);
+};
+var _elm_lang$html$Html_Attributes$alt = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'alt', value);
+};
+var _elm_lang$html$Html_Attributes$preload = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'preload', value);
+};
+var _elm_lang$html$Html_Attributes$poster = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'poster', value);
+};
+var _elm_lang$html$Html_Attributes$kind = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'kind', value);
+};
+var _elm_lang$html$Html_Attributes$srclang = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'srclang', value);
+};
+var _elm_lang$html$Html_Attributes$sandbox = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'sandbox', value);
+};
+var _elm_lang$html$Html_Attributes$srcdoc = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'srcdoc', value);
+};
+var _elm_lang$html$Html_Attributes$type_ = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'type', value);
+};
+var _elm_lang$html$Html_Attributes$value = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'value', value);
+};
+var _elm_lang$html$Html_Attributes$defaultValue = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'defaultValue', value);
+};
+var _elm_lang$html$Html_Attributes$placeholder = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'placeholder', value);
+};
+var _elm_lang$html$Html_Attributes$accept = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'accept', value);
+};
+var _elm_lang$html$Html_Attributes$acceptCharset = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'acceptCharset', value);
+};
+var _elm_lang$html$Html_Attributes$action = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'action', value);
+};
+var _elm_lang$html$Html_Attributes$autocomplete = function (bool) {
+	return A2(
+		_elm_lang$html$Html_Attributes$stringProperty,
+		'autocomplete',
+		bool ? 'on' : 'off');
+};
+var _elm_lang$html$Html_Attributes$enctype = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'enctype', value);
+};
+var _elm_lang$html$Html_Attributes$method = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'method', value);
+};
+var _elm_lang$html$Html_Attributes$name = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'name', value);
+};
+var _elm_lang$html$Html_Attributes$pattern = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'pattern', value);
+};
+var _elm_lang$html$Html_Attributes$for = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'htmlFor', value);
+};
+var _elm_lang$html$Html_Attributes$max = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'max', value);
+};
+var _elm_lang$html$Html_Attributes$min = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'min', value);
+};
+var _elm_lang$html$Html_Attributes$step = function (n) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'step', n);
+};
+var _elm_lang$html$Html_Attributes$wrap = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'wrap', value);
+};
+var _elm_lang$html$Html_Attributes$usemap = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'useMap', value);
+};
+var _elm_lang$html$Html_Attributes$shape = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'shape', value);
+};
+var _elm_lang$html$Html_Attributes$coords = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'coords', value);
+};
+var _elm_lang$html$Html_Attributes$keytype = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'keytype', value);
+};
+var _elm_lang$html$Html_Attributes$align = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'align', value);
+};
+var _elm_lang$html$Html_Attributes$cite = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'cite', value);
+};
+var _elm_lang$html$Html_Attributes$href = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'href', value);
+};
+var _elm_lang$html$Html_Attributes$target = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'target', value);
+};
+var _elm_lang$html$Html_Attributes$downloadAs = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'download', value);
+};
+var _elm_lang$html$Html_Attributes$hreflang = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'hreflang', value);
+};
+var _elm_lang$html$Html_Attributes$ping = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'ping', value);
+};
+var _elm_lang$html$Html_Attributes$start = function (n) {
+	return A2(
+		_elm_lang$html$Html_Attributes$stringProperty,
+		'start',
+		_elm_lang$core$Basics$toString(n));
+};
+var _elm_lang$html$Html_Attributes$headers = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'headers', value);
+};
+var _elm_lang$html$Html_Attributes$scope = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$stringProperty, 'scope', value);
+};
+var _elm_lang$html$Html_Attributes$boolProperty = F2(
+	function (name, bool) {
+		return A2(
+			_elm_lang$html$Html_Attributes$property,
+			name,
+			_elm_lang$core$Json_Encode$bool(bool));
+	});
+var _elm_lang$html$Html_Attributes$hidden = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'hidden', bool);
+};
+var _elm_lang$html$Html_Attributes$contenteditable = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'contentEditable', bool);
+};
+var _elm_lang$html$Html_Attributes$spellcheck = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'spellcheck', bool);
+};
+var _elm_lang$html$Html_Attributes$async = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'async', bool);
+};
+var _elm_lang$html$Html_Attributes$defer = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'defer', bool);
+};
+var _elm_lang$html$Html_Attributes$scoped = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'scoped', bool);
+};
+var _elm_lang$html$Html_Attributes$autoplay = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'autoplay', bool);
+};
+var _elm_lang$html$Html_Attributes$controls = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'controls', bool);
+};
+var _elm_lang$html$Html_Attributes$loop = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'loop', bool);
+};
+var _elm_lang$html$Html_Attributes$default = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'default', bool);
+};
+var _elm_lang$html$Html_Attributes$seamless = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'seamless', bool);
+};
+var _elm_lang$html$Html_Attributes$checked = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'checked', bool);
+};
+var _elm_lang$html$Html_Attributes$selected = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'selected', bool);
+};
+var _elm_lang$html$Html_Attributes$autofocus = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'autofocus', bool);
+};
+var _elm_lang$html$Html_Attributes$disabled = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'disabled', bool);
+};
+var _elm_lang$html$Html_Attributes$multiple = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'multiple', bool);
+};
+var _elm_lang$html$Html_Attributes$novalidate = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'noValidate', bool);
+};
+var _elm_lang$html$Html_Attributes$readonly = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'readOnly', bool);
+};
+var _elm_lang$html$Html_Attributes$required = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'required', bool);
+};
+var _elm_lang$html$Html_Attributes$ismap = function (value) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'isMap', value);
+};
+var _elm_lang$html$Html_Attributes$download = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'download', bool);
+};
+var _elm_lang$html$Html_Attributes$reversed = function (bool) {
+	return A2(_elm_lang$html$Html_Attributes$boolProperty, 'reversed', bool);
+};
+var _elm_lang$html$Html_Attributes$classList = function (list) {
+	return _elm_lang$html$Html_Attributes$class(
+		A2(
+			_elm_lang$core$String$join,
+			' ',
+			A2(
+				_elm_lang$core$List$map,
+				_elm_lang$core$Tuple$first,
+				A2(_elm_lang$core$List$filter, _elm_lang$core$Tuple$second, list))));
+};
+var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
+var _elm_lang$html$Html_Events$keyCode = A2(_elm_lang$core$Json_Decode$field, 'keyCode', _elm_lang$core$Json_Decode$int);
+var _elm_lang$html$Html_Events$targetChecked = A2(
+	_elm_lang$core$Json_Decode$at,
+	{
+		ctor: '::',
+		_0: 'target',
+		_1: {
+			ctor: '::',
+			_0: 'checked',
+			_1: {ctor: '[]'}
+		}
+	},
+	_elm_lang$core$Json_Decode$bool);
+var _elm_lang$html$Html_Events$targetValue = A2(
+	_elm_lang$core$Json_Decode$at,
+	{
+		ctor: '::',
+		_0: 'target',
+		_1: {
+			ctor: '::',
+			_0: 'value',
+			_1: {ctor: '[]'}
+		}
+	},
+	_elm_lang$core$Json_Decode$string);
+var _elm_lang$html$Html_Events$defaultOptions = _elm_lang$virtual_dom$VirtualDom$defaultOptions;
+var _elm_lang$html$Html_Events$onWithOptions = _elm_lang$virtual_dom$VirtualDom$onWithOptions;
+var _elm_lang$html$Html_Events$on = _elm_lang$virtual_dom$VirtualDom$on;
+var _elm_lang$html$Html_Events$onFocus = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'focus',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onBlur = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'blur',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onSubmitOptions = _elm_lang$core$Native_Utils.update(
+	_elm_lang$html$Html_Events$defaultOptions,
+	{preventDefault: true});
+var _elm_lang$html$Html_Events$onSubmit = function (msg) {
+	return A3(
+		_elm_lang$html$Html_Events$onWithOptions,
+		'submit',
+		_elm_lang$html$Html_Events$onSubmitOptions,
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onCheck = function (tagger) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'change',
+		A2(_elm_lang$core$Json_Decode$map, tagger, _elm_lang$html$Html_Events$targetChecked));
+};
+var _elm_lang$html$Html_Events$onInput = function (tagger) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'input',
+		A2(_elm_lang$core$Json_Decode$map, tagger, _elm_lang$html$Html_Events$targetValue));
+};
+var _elm_lang$html$Html_Events$onMouseOut = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mouseout',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onMouseOver = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mouseover',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onMouseLeave = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mouseleave',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onMouseEnter = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mouseenter',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onMouseUp = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mouseup',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onMouseDown = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'mousedown',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onDoubleClick = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'dblclick',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$onClick = function (msg) {
+	return A2(
+		_elm_lang$html$Html_Events$on,
+		'click',
+		_elm_lang$core$Json_Decode$succeed(msg));
+};
+var _elm_lang$html$Html_Events$Options = F2(
+	function (a, b) {
+		return {stopPropagation: a, preventDefault: b};
+	});
+var _surprisetalk$elm_bulma$Bulma_CDN$stylesheet = A3(
+	_elm_lang$html$Html$node,
+	'link',
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$rel('stylesheet'),
+		_1: {
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$href('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'),
+			_1: {ctor: '[]'}
+		}
+	},
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Classes$isToggleRounded = _elm_lang$html$Html_Attributes$class('is-toggle-rounded');
+var _surprisetalk$elm_bulma$Bulma_Classes$isToggle = _elm_lang$html$Html_Attributes$class('is-toggle');
+var _surprisetalk$elm_bulma$Bulma_Classes$tabs = _elm_lang$html$Html_Attributes$class('tabs');
+var _surprisetalk$elm_bulma$Bulma_Classes$panelIcon = _elm_lang$html$Html_Attributes$class('panel-icon');
+var _surprisetalk$elm_bulma$Bulma_Classes$panelBlock = _elm_lang$html$Html_Attributes$class('panel-block');
+var _surprisetalk$elm_bulma$Bulma_Classes$panelTabs = _elm_lang$html$Html_Attributes$class('panel-tabs');
+var _surprisetalk$elm_bulma$Bulma_Classes$panelHeading = _elm_lang$html$Html_Attributes$class('panel-heading');
+var _surprisetalk$elm_bulma$Bulma_Classes$panel = _elm_lang$html$Html_Attributes$class('panel');
+var _surprisetalk$elm_bulma$Bulma_Classes$isCurrent = _elm_lang$html$Html_Attributes$class('is-current');
+var _surprisetalk$elm_bulma$Bulma_Classes$paginationEllipsis = _elm_lang$html$Html_Attributes$class('pagination-ellipsis');
+var _surprisetalk$elm_bulma$Bulma_Classes$paginationLink = _elm_lang$html$Html_Attributes$class('pagination-link');
+var _surprisetalk$elm_bulma$Bulma_Classes$paginationList = _elm_lang$html$Html_Attributes$class('pagination-list');
+var _surprisetalk$elm_bulma$Bulma_Classes$paginationNext = _elm_lang$html$Html_Attributes$class('pagination-next');
+var _surprisetalk$elm_bulma$Bulma_Classes$paginationPrevious = _elm_lang$html$Html_Attributes$class('pagination-previous');
+var _surprisetalk$elm_bulma$Bulma_Classes$pagination = _elm_lang$html$Html_Attributes$class('pagination');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTransparent = _elm_lang$html$Html_Attributes$class('is-transparent');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasDropdownUp = _elm_lang$html$Html_Attributes$class('has-dropdown-up');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasDropdown = _elm_lang$html$Html_Attributes$class('has-dropdown');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasNavbarFixedBottom = _elm_lang$html$Html_Attributes$class('has-navbar-fixed-bottom');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasNavbarFixedTop = _elm_lang$html$Html_Attributes$class('has-navbar-fixed-top');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFixedBottom = _elm_lang$html$Html_Attributes$class('is-fixed-bottom');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFixedTop = _elm_lang$html$Html_Attributes$class('is-fixed-top');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarDivider = _elm_lang$html$Html_Attributes$class('navbar-divider');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarDropdown = _elm_lang$html$Html_Attributes$class('navbar-dropdown');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarLink = _elm_lang$html$Html_Attributes$class('navbar-link');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarItem = _elm_lang$html$Html_Attributes$class('navbar-item');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarEnd = _elm_lang$html$Html_Attributes$class('navbar-end');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarStart = _elm_lang$html$Html_Attributes$class('navbar-start');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarMenu = _elm_lang$html$Html_Attributes$class('navbar-menu');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarBurger = _elm_lang$html$Html_Attributes$class('navbar-burger');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbarBrand = _elm_lang$html$Html_Attributes$class('navbar-brand');
+var _surprisetalk$elm_bulma$Bulma_Classes$navbar = _elm_lang$html$Html_Attributes$class('navbar');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalCardFoot = _elm_lang$html$Html_Attributes$class('modal-card-foot');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalCardBody = _elm_lang$html$Html_Attributes$class('modal-card-body');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalCardTitle = _elm_lang$html$Html_Attributes$class('modal-card-title');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalCardHead = _elm_lang$html$Html_Attributes$class('modal-card-head');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalCard = _elm_lang$html$Html_Attributes$class('modal-card');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalClose = _elm_lang$html$Html_Attributes$class('modal-close');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalContent = _elm_lang$html$Html_Attributes$class('modal-content');
+var _surprisetalk$elm_bulma$Bulma_Classes$modalBackground = _elm_lang$html$Html_Attributes$class('modal-background');
+var _surprisetalk$elm_bulma$Bulma_Classes$modal = _elm_lang$html$Html_Attributes$class('modal');
+var _surprisetalk$elm_bulma$Bulma_Classes$messageHeader = _elm_lang$html$Html_Attributes$class('message-header');
+var _surprisetalk$elm_bulma$Bulma_Classes$messageBody = _elm_lang$html$Html_Attributes$class('message-body');
+var _surprisetalk$elm_bulma$Bulma_Classes$message = _elm_lang$html$Html_Attributes$class('message');
+var _surprisetalk$elm_bulma$Bulma_Classes$menuList = _elm_lang$html$Html_Attributes$class('menu-list');
+var _surprisetalk$elm_bulma$Bulma_Classes$menuLabel = _elm_lang$html$Html_Attributes$class('menu-label');
+var _surprisetalk$elm_bulma$Bulma_Classes$menu = _elm_lang$html$Html_Attributes$class('menu');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdownDivider = _elm_lang$html$Html_Attributes$class('dropdown-divider');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdownItem = _elm_lang$html$Html_Attributes$class('dropdown-item');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdownContent = _elm_lang$html$Html_Attributes$class('dropdown-content');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdownMenu = _elm_lang$html$Html_Attributes$class('dropdown-menu');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdownTrigger = _elm_lang$html$Html_Attributes$class('dropdown-trigger');
+var _surprisetalk$elm_bulma$Bulma_Classes$dropdown = _elm_lang$html$Html_Attributes$class('dropdown');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardFooterItem = _elm_lang$html$Html_Attributes$class('card-footer-item');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardFooter = _elm_lang$html$Html_Attributes$class('card-footer');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardContent = _elm_lang$html$Html_Attributes$class('card-content');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardImage = _elm_lang$html$Html_Attributes$class('card-image');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardHeaderIcon = _elm_lang$html$Html_Attributes$class('card-header-icon');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardHeaderTitle = _elm_lang$html$Html_Attributes$class('card-header-title');
+var _surprisetalk$elm_bulma$Bulma_Classes$cardHeader = _elm_lang$html$Html_Attributes$class('card-header');
+var _surprisetalk$elm_bulma$Bulma_Classes$card = _elm_lang$html$Html_Attributes$class('card');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasSucceedsSeparator = _elm_lang$html$Html_Attributes$class('has-succeeds-separator');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasDotSeparator = _elm_lang$html$Html_Attributes$class('has-dot-separator');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBulletSeparator = _elm_lang$html$Html_Attributes$class('has-bullet-separator');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasArrowSeparator = _elm_lang$html$Html_Attributes$class('has-arrow-separator');
+var _surprisetalk$elm_bulma$Bulma_Classes$breadcrumb = _elm_lang$html$Html_Attributes$class('breadcrumb');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSpaced = _elm_lang$html$Html_Attributes$class('is-spaced');
+var _surprisetalk$elm_bulma$Bulma_Classes$subtitle = _elm_lang$html$Html_Attributes$class('subtitle');
+var _surprisetalk$elm_bulma$Bulma_Classes$title = _elm_lang$html$Html_Attributes$class('title');
+var _surprisetalk$elm_bulma$Bulma_Classes$isDelete = _elm_lang$html$Html_Attributes$class('is-delete');
+var _surprisetalk$elm_bulma$Bulma_Classes$tags = _elm_lang$html$Html_Attributes$class('tags');
+var _surprisetalk$elm_bulma$Bulma_Classes$tag = _elm_lang$html$Html_Attributes$class('tag');
+var _surprisetalk$elm_bulma$Bulma_Classes$isStriped = _elm_lang$html$Html_Attributes$class('is-striped');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBordered = _elm_lang$html$Html_Attributes$class('is-bordered');
+var _surprisetalk$elm_bulma$Bulma_Classes$table = _elm_lang$html$Html_Attributes$class('table');
+var _surprisetalk$elm_bulma$Bulma_Classes$progress = _elm_lang$html$Html_Attributes$class('progress');
+var _surprisetalk$elm_bulma$Bulma_Classes$notification = _elm_lang$html$Html_Attributes$class('notification');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01by03 = _elm_lang$html$Html_Attributes$class('is-1by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01by02 = _elm_lang$html$Html_Attributes$class('is-1by2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09by16 = _elm_lang$html$Html_Attributes$class('is-9by16');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03by05 = _elm_lang$html$Html_Attributes$class('is-3by5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02by03 = _elm_lang$html$Html_Attributes$class('is-2by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03by04 = _elm_lang$html$Html_Attributes$class('is-3by4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04by05 = _elm_lang$html$Html_Attributes$class('is-4by5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03by01 = _elm_lang$html$Html_Attributes$class('is-3by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02by01 = _elm_lang$html$Html_Attributes$class('is-2by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is16by09 = _elm_lang$html$Html_Attributes$class('is-16by9');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05by03 = _elm_lang$html$Html_Attributes$class('is-5by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03by02 = _elm_lang$html$Html_Attributes$class('is-3by2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04by03 = _elm_lang$html$Html_Attributes$class('is-4by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05by04 = _elm_lang$html$Html_Attributes$class('is-5by4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01by01 = _elm_lang$html$Html_Attributes$class('is-1by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1by3 = _elm_lang$html$Html_Attributes$class('is-1by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1by2 = _elm_lang$html$Html_Attributes$class('is-1by2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9by16 = _elm_lang$html$Html_Attributes$class('is-9by16');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3by5 = _elm_lang$html$Html_Attributes$class('is-3by5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2by3 = _elm_lang$html$Html_Attributes$class('is-2by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3by4 = _elm_lang$html$Html_Attributes$class('is-3by4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4by5 = _elm_lang$html$Html_Attributes$class('is-4by5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3by1 = _elm_lang$html$Html_Attributes$class('is-3by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2by1 = _elm_lang$html$Html_Attributes$class('is-2by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is16by9 = _elm_lang$html$Html_Attributes$class('is-16by9');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5by3 = _elm_lang$html$Html_Attributes$class('is-5by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3by2 = _elm_lang$html$Html_Attributes$class('is-3by2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4by3 = _elm_lang$html$Html_Attributes$class('is-4by3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5by4 = _elm_lang$html$Html_Attributes$class('is-5by4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1by1 = _elm_lang$html$Html_Attributes$class('is-1by1');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSquare = _elm_lang$html$Html_Attributes$class('is-square');
+var _surprisetalk$elm_bulma$Bulma_Classes$is128x128 = _elm_lang$html$Html_Attributes$class('is-128x128');
+var _surprisetalk$elm_bulma$Bulma_Classes$is096x096 = _elm_lang$html$Html_Attributes$class('is-96x96');
+var _surprisetalk$elm_bulma$Bulma_Classes$is064x064 = _elm_lang$html$Html_Attributes$class('is-64x64');
+var _surprisetalk$elm_bulma$Bulma_Classes$is048x048 = _elm_lang$html$Html_Attributes$class('is-48x48');
+var _surprisetalk$elm_bulma$Bulma_Classes$is032x032 = _elm_lang$html$Html_Attributes$class('is-32x32');
+var _surprisetalk$elm_bulma$Bulma_Classes$is024x024 = _elm_lang$html$Html_Attributes$class('is-24x24');
+var _surprisetalk$elm_bulma$Bulma_Classes$is016x016 = _elm_lang$html$Html_Attributes$class('is-16x16');
+var _surprisetalk$elm_bulma$Bulma_Classes$is96x96 = _elm_lang$html$Html_Attributes$class('is-96x96');
+var _surprisetalk$elm_bulma$Bulma_Classes$is64x64 = _elm_lang$html$Html_Attributes$class('is-64x64');
+var _surprisetalk$elm_bulma$Bulma_Classes$is48x48 = _elm_lang$html$Html_Attributes$class('is-48x48');
+var _surprisetalk$elm_bulma$Bulma_Classes$is32x32 = _elm_lang$html$Html_Attributes$class('is-32x32');
+var _surprisetalk$elm_bulma$Bulma_Classes$is24x24 = _elm_lang$html$Html_Attributes$class('is-24x24');
+var _surprisetalk$elm_bulma$Bulma_Classes$is16x16 = _elm_lang$html$Html_Attributes$class('is-16x16');
+var _surprisetalk$elm_bulma$Bulma_Classes$image = _elm_lang$html$Html_Attributes$class('image');
+var _surprisetalk$elm_bulma$Bulma_Classes$icon = _elm_lang$html$Html_Attributes$class('icon');
+var _surprisetalk$elm_bulma$Bulma_Classes$delete = _elm_lang$html$Html_Attributes$class('delete');
+var _surprisetalk$elm_bulma$Bulma_Classes$content = _elm_lang$html$Html_Attributes$class('content');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSelected = _elm_lang$html$Html_Attributes$class('is-selected');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInverted = _elm_lang$html$Html_Attributes$class('is-inverted');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOutlined = _elm_lang$html$Html_Attributes$class('is-outlined');
+var _surprisetalk$elm_bulma$Bulma_Classes$buttons = _elm_lang$html$Html_Attributes$class('buttons');
+var _surprisetalk$elm_bulma$Bulma_Classes$button = _elm_lang$html$Html_Attributes$class('button');
+var _surprisetalk$elm_bulma$Bulma_Classes$box = _elm_lang$html$Html_Attributes$class('box');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasName = _elm_lang$html$Html_Attributes$class('has-name');
+var _surprisetalk$elm_bulma$Bulma_Classes$fileName = _elm_lang$html$Html_Attributes$class('file-name');
+var _surprisetalk$elm_bulma$Bulma_Classes$fileIcon = _elm_lang$html$Html_Attributes$class('file-icon');
+var _surprisetalk$elm_bulma$Bulma_Classes$fileCTA = _elm_lang$html$Html_Attributes$class('file-cta');
+var _surprisetalk$elm_bulma$Bulma_Classes$fileInput = _elm_lang$html$Html_Attributes$class('file-input');
+var _surprisetalk$elm_bulma$Bulma_Classes$fileLabel = _elm_lang$html$Html_Attributes$class('file-label');
+var _surprisetalk$elm_bulma$Bulma_Classes$file = _elm_lang$html$Html_Attributes$class('file');
+var _surprisetalk$elm_bulma$Bulma_Classes$isMultiple = _elm_lang$html$Html_Attributes$class('is-multiple');
+var _surprisetalk$elm_bulma$Bulma_Classes$fieldBody = _elm_lang$html$Html_Attributes$class('field-body');
+var _surprisetalk$elm_bulma$Bulma_Classes$fieldLabel = _elm_lang$html$Html_Attributes$class('field-label');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHorizontal = _elm_lang$html$Html_Attributes$class('is-horizontal');
+var _surprisetalk$elm_bulma$Bulma_Classes$isGroupedMultiline = _elm_lang$html$Html_Attributes$class('is-grouped-multiline');
+var _surprisetalk$elm_bulma$Bulma_Classes$isGroupedRight = _elm_lang$html$Html_Attributes$class('is-grouped-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$isGroupedCentered = _elm_lang$html$Html_Attributes$class('is-grouped-centered');
+var _surprisetalk$elm_bulma$Bulma_Classes$isGrouped = _elm_lang$html$Html_Attributes$class('is-grouped');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasAddonsRight = _elm_lang$html$Html_Attributes$class('has-addons-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasAddonsCentered = _elm_lang$html$Html_Attributes$class('has-addons-centered');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFullWidth = _elm_lang$html$Html_Attributes$class('is-fullwidth');
+var _surprisetalk$elm_bulma$Bulma_Classes$isExpanded = _elm_lang$html$Html_Attributes$class('is-expanded');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasAddons = _elm_lang$html$Html_Attributes$class('has-addons');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasIconsRight = _elm_lang$html$Html_Attributes$class('has-icons-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasIconsLeft = _elm_lang$html$Html_Attributes$class('has-icons-left');
+var _surprisetalk$elm_bulma$Bulma_Classes$field = _elm_lang$html$Html_Attributes$class('field');
+var _surprisetalk$elm_bulma$Bulma_Classes$control = _elm_lang$html$Html_Attributes$class('control');
+var _surprisetalk$elm_bulma$Bulma_Classes$help = _elm_lang$html$Html_Attributes$class('help');
+var _surprisetalk$elm_bulma$Bulma_Classes$radio = _elm_lang$html$Html_Attributes$class('radio');
+var _surprisetalk$elm_bulma$Bulma_Classes$checkbox = _elm_lang$html$Html_Attributes$class('checkbox');
+var _surprisetalk$elm_bulma$Bulma_Classes$select = _elm_lang$html$Html_Attributes$class('select');
+var _surprisetalk$elm_bulma$Bulma_Classes$textarea = _elm_lang$html$Html_Attributes$class('textarea');
+var _surprisetalk$elm_bulma$Bulma_Classes$input = _elm_lang$html$Html_Attributes$class('input');
+var _surprisetalk$elm_bulma$Bulma_Classes$label = _elm_lang$html$Html_Attributes$class('label');
+var _surprisetalk$elm_bulma$Bulma_Classes$isVertical = _elm_lang$html$Html_Attributes$class('is-vertical');
+var _surprisetalk$elm_bulma$Bulma_Classes$isChild = _elm_lang$html$Html_Attributes$class('is-child');
+var _surprisetalk$elm_bulma$Bulma_Classes$isParent = _elm_lang$html$Html_Attributes$class('is-parent');
+var _surprisetalk$elm_bulma$Bulma_Classes$isAncestor = _elm_lang$html$Html_Attributes$class('is-ancestor');
+var _surprisetalk$elm_bulma$Bulma_Classes$tile = _elm_lang$html$Html_Attributes$class('tile');
+var _surprisetalk$elm_bulma$Bulma_Classes$footer = _elm_lang$html$Html_Attributes$class('footer');
+var _surprisetalk$elm_bulma$Bulma_Classes$section = _elm_lang$html$Html_Attributes$class('section');
+var _surprisetalk$elm_bulma$Bulma_Classes$heroFoot = _elm_lang$html$Html_Attributes$class('hero-foot');
+var _surprisetalk$elm_bulma$Bulma_Classes$heroHead = _elm_lang$html$Html_Attributes$class('hero-head');
+var _surprisetalk$elm_bulma$Bulma_Classes$heroBody = _elm_lang$html$Html_Attributes$class('hero-body');
+var _surprisetalk$elm_bulma$Bulma_Classes$hero = _elm_lang$html$Html_Attributes$class('hero');
+var _surprisetalk$elm_bulma$Bulma_Classes$mediaRight = _elm_lang$html$Html_Attributes$class('media-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$mediaContent = _elm_lang$html$Html_Attributes$class('media-content');
+var _surprisetalk$elm_bulma$Bulma_Classes$mediaLeft = _elm_lang$html$Html_Attributes$class('media-left');
+var _surprisetalk$elm_bulma$Bulma_Classes$media = _elm_lang$html$Html_Attributes$class('media');
+var _surprisetalk$elm_bulma$Bulma_Classes$levelItem = _elm_lang$html$Html_Attributes$class('level-item');
+var _surprisetalk$elm_bulma$Bulma_Classes$levelRight = _elm_lang$html$Html_Attributes$class('level-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$levelLeft = _elm_lang$html$Html_Attributes$class('level-left');
+var _surprisetalk$elm_bulma$Bulma_Classes$level = _elm_lang$html$Html_Attributes$class('level');
+var _surprisetalk$elm_bulma$Bulma_Classes$isWidescreen = _elm_lang$html$Html_Attributes$class('is-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFullHD = _elm_lang$html$Html_Attributes$class('is-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFluid = _elm_lang$html$Html_Attributes$class('is-fluid');
+var _surprisetalk$elm_bulma$Bulma_Classes$container = _elm_lang$html$Html_Attributes$class('container');
+var _surprisetalk$elm_bulma$Bulma_Classes$isCentered = _elm_lang$html$Html_Attributes$class('is-centered');
+var _surprisetalk$elm_bulma$Bulma_Classes$isVariable = _elm_lang$html$Html_Attributes$class('is-variable');
+var _surprisetalk$elm_bulma$Bulma_Classes$isMultiline = _elm_lang$html$Html_Attributes$class('is-multiline');
+var _surprisetalk$elm_bulma$Bulma_Classes$isGapless = _elm_lang$html$Html_Attributes$class('is-gapless');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowFullHD = _elm_lang$html$Html_Attributes$class('is-narrow-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowWidescreen = _elm_lang$html$Html_Attributes$class('is-narrow-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowDesktop = _elm_lang$html$Html_Attributes$class('is-narrow-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowTablet = _elm_lang$html$Html_Attributes$class('is-narrow-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowTouch = _elm_lang$html$Html_Attributes$class('is-narrow-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrowMobile = _elm_lang$html$Html_Attributes$class('is-narrow-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNarrow = _elm_lang$html$Html_Attributes$class('is-narrow');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset11 = _elm_lang$html$Html_Attributes$class('is-offset-11');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset10 = _elm_lang$html$Html_Attributes$class('is-offset-10');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset09 = _elm_lang$html$Html_Attributes$class('is-offset-9');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset08 = _elm_lang$html$Html_Attributes$class('is-offset-8');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset07 = _elm_lang$html$Html_Attributes$class('is-offset-7');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset06 = _elm_lang$html$Html_Attributes$class('is-offset-6');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset05 = _elm_lang$html$Html_Attributes$class('is-offset-5');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset04 = _elm_lang$html$Html_Attributes$class('is-offset-4');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset03 = _elm_lang$html$Html_Attributes$class('is-offset-3');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset02 = _elm_lang$html$Html_Attributes$class('is-offset-2');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset01 = _elm_lang$html$Html_Attributes$class('is-offset-1');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset9 = _elm_lang$html$Html_Attributes$class('is-9');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset8 = _elm_lang$html$Html_Attributes$class('is-8');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset7 = _elm_lang$html$Html_Attributes$class('is-7');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset6 = _elm_lang$html$Html_Attributes$class('is-6');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset5 = _elm_lang$html$Html_Attributes$class('is-5');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset4 = _elm_lang$html$Html_Attributes$class('is-4');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset3 = _elm_lang$html$Html_Attributes$class('is-3');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset2 = _elm_lang$html$Html_Attributes$class('is-2');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffset1 = _elm_lang$html$Html_Attributes$class('is-1');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetOneFifth = _elm_lang$html$Html_Attributes$class('is-offset-one-fifth');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetTwoFifths = _elm_lang$html$Html_Attributes$class('is-offset-two-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetThreeFifths = _elm_lang$html$Html_Attributes$class('is-offset-three-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetFourFifths = _elm_lang$html$Html_Attributes$class('is-offset-four-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetOneQuarter = _elm_lang$html$Html_Attributes$class('is-offset-one-quarter');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetOneThird = _elm_lang$html$Html_Attributes$class('is-offset-one-third');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetHalf = _elm_lang$html$Html_Attributes$class('is-offset-half');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetTwoThirds = _elm_lang$html$Html_Attributes$class('is-offset-two-thirds');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOffsetThreeQuarters = _elm_lang$html$Html_Attributes$class('is-offset-three-quarters');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifthFullHD = _elm_lang$html$Html_Attributes$class('is-one-fifth-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifthsFullHD = _elm_lang$html$Html_Attributes$class('is-two-fifths-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifthsFullHD = _elm_lang$html$Html_Attributes$class('is-three-fifths-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifthsFullHD = _elm_lang$html$Html_Attributes$class('is-four-fifths-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarterFullHD = _elm_lang$html$Html_Attributes$class('is-one-quarter-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThirdFullHD = _elm_lang$html$Html_Attributes$class('is-one-third-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalfFullHD = _elm_lang$html$Html_Attributes$class('is-half-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirdsFullHD = _elm_lang$html$Html_Attributes$class('is-two-thirds-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuartersFullHD = _elm_lang$html$Html_Attributes$class('is-three-quarters-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifthWidescreen = _elm_lang$html$Html_Attributes$class('is-one-fifth-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifthsWidescreen = _elm_lang$html$Html_Attributes$class('is-two-fifths-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifthsWidescreen = _elm_lang$html$Html_Attributes$class('is-three-fifths-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifthsWidescreen = _elm_lang$html$Html_Attributes$class('is-four-fifths-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarterWidescreen = _elm_lang$html$Html_Attributes$class('is-one-quarter-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThirdWidescreen = _elm_lang$html$Html_Attributes$class('is-one-third-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalfWidescreen = _elm_lang$html$Html_Attributes$class('is-half-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirdsWidescreen = _elm_lang$html$Html_Attributes$class('is-two-thirds-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuartersWidescreen = _elm_lang$html$Html_Attributes$class('is-three-quarters-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifthDesktop = _elm_lang$html$Html_Attributes$class('is-one-fifth-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifthsDesktop = _elm_lang$html$Html_Attributes$class('is-two-fifths-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifthsDesktop = _elm_lang$html$Html_Attributes$class('is-three-fifths-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifthsDesktop = _elm_lang$html$Html_Attributes$class('is-four-fifths-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarterDesktop = _elm_lang$html$Html_Attributes$class('is-one-quarter-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThirdDesktop = _elm_lang$html$Html_Attributes$class('is-one-third-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalfDesktop = _elm_lang$html$Html_Attributes$class('is-half-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirdsDesktop = _elm_lang$html$Html_Attributes$class('is-two-thirds-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuartersDesktop = _elm_lang$html$Html_Attributes$class('is-three-quarters-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifthTablet = _elm_lang$html$Html_Attributes$class('is-one-fifth-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifthsTablet = _elm_lang$html$Html_Attributes$class('is-two-fifths-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifthsTablet = _elm_lang$html$Html_Attributes$class('is-three-fifths-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifthsTablet = _elm_lang$html$Html_Attributes$class('is-four-fifths-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarterTablet = _elm_lang$html$Html_Attributes$class('is-one-quarter-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThirdTablet = _elm_lang$html$Html_Attributes$class('is-one-third-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalfTablet = _elm_lang$html$Html_Attributes$class('is-half-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirdsTablet = _elm_lang$html$Html_Attributes$class('is-two-thirds-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuartersTablet = _elm_lang$html$Html_Attributes$class('is-three-quarters-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifthMobile = _elm_lang$html$Html_Attributes$class('is-one-fifth-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifthsMobile = _elm_lang$html$Html_Attributes$class('is-two-fifths-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifthsMobile = _elm_lang$html$Html_Attributes$class('is-three-fifths-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifthsMobile = _elm_lang$html$Html_Attributes$class('is-four-fifths-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarterMobile = _elm_lang$html$Html_Attributes$class('is-one-quarter-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThirdMobile = _elm_lang$html$Html_Attributes$class('is-one-third-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalfMobile = _elm_lang$html$Html_Attributes$class('is-half-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirdsMobile = _elm_lang$html$Html_Attributes$class('is-two-thirds-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuartersMobile = _elm_lang$html$Html_Attributes$class('is-three-quarters-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneFifth = _elm_lang$html$Html_Attributes$class('is-one-fifth');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoFifths = _elm_lang$html$Html_Attributes$class('is-two-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeFifths = _elm_lang$html$Html_Attributes$class('is-three-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFourFifths = _elm_lang$html$Html_Attributes$class('is-four-fifths');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneQuarter = _elm_lang$html$Html_Attributes$class('is-one-quarter');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOneThird = _elm_lang$html$Html_Attributes$class('is-one-third');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHalf = _elm_lang$html$Html_Attributes$class('is-half');
+var _surprisetalk$elm_bulma$Bulma_Classes$isTwoThirds = _elm_lang$html$Html_Attributes$class('is-two-thirds');
+var _surprisetalk$elm_bulma$Bulma_Classes$isThreeQuarters = _elm_lang$html$Html_Attributes$class('is-three-quarters');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11FullHD = _elm_lang$html$Html_Attributes$class('is-11-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10FullHD = _elm_lang$html$Html_Attributes$class('is-10-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09FullHD = _elm_lang$html$Html_Attributes$class('is-9-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08FullHD = _elm_lang$html$Html_Attributes$class('is-8-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07FullHD = _elm_lang$html$Html_Attributes$class('is-7-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06FullHD = _elm_lang$html$Html_Attributes$class('is-6-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05FullHD = _elm_lang$html$Html_Attributes$class('is-5-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04FullHD = _elm_lang$html$Html_Attributes$class('is-4-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03FullHD = _elm_lang$html$Html_Attributes$class('is-3-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02FullHD = _elm_lang$html$Html_Attributes$class('is-2-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01FullHD = _elm_lang$html$Html_Attributes$class('is-1-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9FullHD = _elm_lang$html$Html_Attributes$class('is-9-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8FullHD = _elm_lang$html$Html_Attributes$class('is-8-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7FullHD = _elm_lang$html$Html_Attributes$class('is-7-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6FullHD = _elm_lang$html$Html_Attributes$class('is-6-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5FullHD = _elm_lang$html$Html_Attributes$class('is-5-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4FullHD = _elm_lang$html$Html_Attributes$class('is-4-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3FullHD = _elm_lang$html$Html_Attributes$class('is-3-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2FullHD = _elm_lang$html$Html_Attributes$class('is-2-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1FullHD = _elm_lang$html$Html_Attributes$class('is-1-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11Widescreen = _elm_lang$html$Html_Attributes$class('is-11-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10Widescreen = _elm_lang$html$Html_Attributes$class('is-10-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09Widescreen = _elm_lang$html$Html_Attributes$class('is-9-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08Widescreen = _elm_lang$html$Html_Attributes$class('is-8-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07Widescreen = _elm_lang$html$Html_Attributes$class('is-7-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06Widescreen = _elm_lang$html$Html_Attributes$class('is-6-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05Widescreen = _elm_lang$html$Html_Attributes$class('is-5-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04Widescreen = _elm_lang$html$Html_Attributes$class('is-4-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03Widescreen = _elm_lang$html$Html_Attributes$class('is-3-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02Widescreen = _elm_lang$html$Html_Attributes$class('is-2-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01Widescreen = _elm_lang$html$Html_Attributes$class('is-1-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9Widescreen = _elm_lang$html$Html_Attributes$class('is-9-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8Widescreen = _elm_lang$html$Html_Attributes$class('is-8-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7Widescreen = _elm_lang$html$Html_Attributes$class('is-7-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6Widescreen = _elm_lang$html$Html_Attributes$class('is-6-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5Widescreen = _elm_lang$html$Html_Attributes$class('is-5-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4Widescreen = _elm_lang$html$Html_Attributes$class('is-4-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3Widescreen = _elm_lang$html$Html_Attributes$class('is-3-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2Widescreen = _elm_lang$html$Html_Attributes$class('is-2-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1Widescreen = _elm_lang$html$Html_Attributes$class('is-1-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11Desktop = _elm_lang$html$Html_Attributes$class('is-11-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10Desktop = _elm_lang$html$Html_Attributes$class('is-10-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09Desktop = _elm_lang$html$Html_Attributes$class('is-9-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08Desktop = _elm_lang$html$Html_Attributes$class('is-8-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07Desktop = _elm_lang$html$Html_Attributes$class('is-7-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06Desktop = _elm_lang$html$Html_Attributes$class('is-6-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05Desktop = _elm_lang$html$Html_Attributes$class('is-5-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04Desktop = _elm_lang$html$Html_Attributes$class('is-4-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03Desktop = _elm_lang$html$Html_Attributes$class('is-3-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02Desktop = _elm_lang$html$Html_Attributes$class('is-2-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01Desktop = _elm_lang$html$Html_Attributes$class('is-1-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9Desktop = _elm_lang$html$Html_Attributes$class('is-9-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8Desktop = _elm_lang$html$Html_Attributes$class('is-8-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7Desktop = _elm_lang$html$Html_Attributes$class('is-7-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6Desktop = _elm_lang$html$Html_Attributes$class('is-6-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5Desktop = _elm_lang$html$Html_Attributes$class('is-5-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4Desktop = _elm_lang$html$Html_Attributes$class('is-4-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3Desktop = _elm_lang$html$Html_Attributes$class('is-3-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2Desktop = _elm_lang$html$Html_Attributes$class('is-2-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1Desktop = _elm_lang$html$Html_Attributes$class('is-1-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11Tablet = _elm_lang$html$Html_Attributes$class('is-11-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10Tablet = _elm_lang$html$Html_Attributes$class('is-10-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09Tablet = _elm_lang$html$Html_Attributes$class('is-9-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08Tablet = _elm_lang$html$Html_Attributes$class('is-8-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07Tablet = _elm_lang$html$Html_Attributes$class('is-7-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06Tablet = _elm_lang$html$Html_Attributes$class('is-6-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05Tablet = _elm_lang$html$Html_Attributes$class('is-5-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04Tablet = _elm_lang$html$Html_Attributes$class('is-4-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03Tablet = _elm_lang$html$Html_Attributes$class('is-3-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02Tablet = _elm_lang$html$Html_Attributes$class('is-2-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01Tablet = _elm_lang$html$Html_Attributes$class('is-1-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9Tablet = _elm_lang$html$Html_Attributes$class('is-9-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8Tablet = _elm_lang$html$Html_Attributes$class('is-8-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7Tablet = _elm_lang$html$Html_Attributes$class('is-7-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6Tablet = _elm_lang$html$Html_Attributes$class('is-6-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5Tablet = _elm_lang$html$Html_Attributes$class('is-5-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4Tablet = _elm_lang$html$Html_Attributes$class('is-4-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3Tablet = _elm_lang$html$Html_Attributes$class('is-3-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2Tablet = _elm_lang$html$Html_Attributes$class('is-2-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1Tablet = _elm_lang$html$Html_Attributes$class('is-1-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11Mobile = _elm_lang$html$Html_Attributes$class('is-11-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10Mobile = _elm_lang$html$Html_Attributes$class('is-10-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09Mobile = _elm_lang$html$Html_Attributes$class('is-9-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08Mobile = _elm_lang$html$Html_Attributes$class('is-8-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07Mobile = _elm_lang$html$Html_Attributes$class('is-7-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06Mobile = _elm_lang$html$Html_Attributes$class('is-6-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05Mobile = _elm_lang$html$Html_Attributes$class('is-5-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04Mobile = _elm_lang$html$Html_Attributes$class('is-4-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03Mobile = _elm_lang$html$Html_Attributes$class('is-3-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02Mobile = _elm_lang$html$Html_Attributes$class('is-2-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01Mobile = _elm_lang$html$Html_Attributes$class('is-1-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9Mobile = _elm_lang$html$Html_Attributes$class('is-9-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8Mobile = _elm_lang$html$Html_Attributes$class('is-8-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7Mobile = _elm_lang$html$Html_Attributes$class('is-7-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6Mobile = _elm_lang$html$Html_Attributes$class('is-6-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5Mobile = _elm_lang$html$Html_Attributes$class('is-5-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4Mobile = _elm_lang$html$Html_Attributes$class('is-4-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3Mobile = _elm_lang$html$Html_Attributes$class('is-3-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2Mobile = _elm_lang$html$Html_Attributes$class('is-2-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1Mobile = _elm_lang$html$Html_Attributes$class('is-1-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$column = _elm_lang$html$Html_Attributes$class('column');
+var _surprisetalk$elm_bulma$Bulma_Classes$columns = _elm_lang$html$Html_Attributes$class('columns');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWeightBold = _elm_lang$html$Html_Attributes$class('has-text-weight-bold');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWeightSemibold = _elm_lang$html$Html_Attributes$class('has-text-weight-semibold');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWeightNormal = _elm_lang$html$Html_Attributes$class('has-text-weight-normal');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWeightLight = _elm_lang$html$Html_Attributes$class('has-text-weight-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$isItalic = _elm_lang$html$Html_Attributes$class('is-italic');
+var _surprisetalk$elm_bulma$Bulma_Classes$isUppercase = _elm_lang$html$Html_Attributes$class('is-uppercase');
+var _surprisetalk$elm_bulma$Bulma_Classes$isLowercase = _elm_lang$html$Html_Attributes$class('is-lowercase');
+var _surprisetalk$elm_bulma$Bulma_Classes$isCapitalized = _elm_lang$html$Html_Attributes$class('is-capitalized');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightFullHD = _elm_lang$html$Html_Attributes$class('has-text-right-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftFullHD = _elm_lang$html$Html_Attributes$class('has-text-left-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedFullHD = _elm_lang$html$Html_Attributes$class('has-text-justified-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredFullHD = _elm_lang$html$Html_Attributes$class('has-text-centered-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightWidescreenOnly = _elm_lang$html$Html_Attributes$class('has-text-right-widescreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftWidescreenOnly = _elm_lang$html$Html_Attributes$class('has-text-left-widescreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedWidescreenOnly = _elm_lang$html$Html_Attributes$class('has-text-justified-widescreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredWidescreenOnly = _elm_lang$html$Html_Attributes$class('has-text-centered-widescreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightWidescreen = _elm_lang$html$Html_Attributes$class('has-text-right-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftWidescreen = _elm_lang$html$Html_Attributes$class('has-text-left-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedWidescreen = _elm_lang$html$Html_Attributes$class('has-text-justified-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredWidescreen = _elm_lang$html$Html_Attributes$class('has-text-centered-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightDesktopOnly = _elm_lang$html$Html_Attributes$class('has-text-right-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftDesktopOnly = _elm_lang$html$Html_Attributes$class('has-text-left-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedDesktopOnly = _elm_lang$html$Html_Attributes$class('has-text-justified-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredDesktopOnly = _elm_lang$html$Html_Attributes$class('has-text-centered-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightDesktop = _elm_lang$html$Html_Attributes$class('has-text-right-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftDesktop = _elm_lang$html$Html_Attributes$class('has-text-left-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedDesktop = _elm_lang$html$Html_Attributes$class('has-text-justified-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredDesktop = _elm_lang$html$Html_Attributes$class('has-text-centered-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightTouch = _elm_lang$html$Html_Attributes$class('has-text-right-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftTouch = _elm_lang$html$Html_Attributes$class('has-text-left-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedTouch = _elm_lang$html$Html_Attributes$class('has-text-justified-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredTouch = _elm_lang$html$Html_Attributes$class('has-text-centered-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightTabletOnly = _elm_lang$html$Html_Attributes$class('has-text-right-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftTabletOnly = _elm_lang$html$Html_Attributes$class('has-text-left-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedTabletOnly = _elm_lang$html$Html_Attributes$class('has-text-justified-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredTabletOnly = _elm_lang$html$Html_Attributes$class('has-text-centered-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightTablet = _elm_lang$html$Html_Attributes$class('has-text-right-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftTablet = _elm_lang$html$Html_Attributes$class('has-text-left-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedTablet = _elm_lang$html$Html_Attributes$class('has-text-justified-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredTablet = _elm_lang$html$Html_Attributes$class('has-text-centered-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRightMobile = _elm_lang$html$Html_Attributes$class('has-text-right-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeftMobile = _elm_lang$html$Html_Attributes$class('has-text-left-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustifiedMobile = _elm_lang$html$Html_Attributes$class('has-text-justified-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCenteredMobile = _elm_lang$html$Html_Attributes$class('has-text-centered-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextRight = _elm_lang$html$Html_Attributes$class('has-text-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLeft = _elm_lang$html$Html_Attributes$class('has-text-left');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextJustified = _elm_lang$html$Html_Attributes$class('has-text-justified');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextCentered = _elm_lang$html$Html_Attributes$class('has-text-centered');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7FullHD = _elm_lang$html$Html_Attributes$class('is-size-7-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6FullHD = _elm_lang$html$Html_Attributes$class('is-size-6-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5FullHD = _elm_lang$html$Html_Attributes$class('is-size-5-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4FullHD = _elm_lang$html$Html_Attributes$class('is-size-4-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3FullHD = _elm_lang$html$Html_Attributes$class('is-size-3-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2FullHD = _elm_lang$html$Html_Attributes$class('is-size-2-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1FullHD = _elm_lang$html$Html_Attributes$class('is-size-1-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7Widescreen = _elm_lang$html$Html_Attributes$class('is-size-7-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6Widescreen = _elm_lang$html$Html_Attributes$class('is-size-6-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5Widescreen = _elm_lang$html$Html_Attributes$class('is-size-5-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4Widescreen = _elm_lang$html$Html_Attributes$class('is-size-4-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3Widescreen = _elm_lang$html$Html_Attributes$class('is-size-3-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2Widescreen = _elm_lang$html$Html_Attributes$class('is-size-2-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1Widescreen = _elm_lang$html$Html_Attributes$class('is-size-1-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7Desktop = _elm_lang$html$Html_Attributes$class('is-size-7-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6Desktop = _elm_lang$html$Html_Attributes$class('is-size-6-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5Desktop = _elm_lang$html$Html_Attributes$class('is-size-5-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4Desktop = _elm_lang$html$Html_Attributes$class('is-size-4-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3Desktop = _elm_lang$html$Html_Attributes$class('is-size-3-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2Desktop = _elm_lang$html$Html_Attributes$class('is-size-2-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1Desktop = _elm_lang$html$Html_Attributes$class('is-size-1-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7Touch = _elm_lang$html$Html_Attributes$class('is-size-7-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6Touch = _elm_lang$html$Html_Attributes$class('is-size-6-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5Touch = _elm_lang$html$Html_Attributes$class('is-size-5-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4Touch = _elm_lang$html$Html_Attributes$class('is-size-4-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3Touch = _elm_lang$html$Html_Attributes$class('is-size-3-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2Touch = _elm_lang$html$Html_Attributes$class('is-size-2-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1Touch = _elm_lang$html$Html_Attributes$class('is-size-1-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7Tablet = _elm_lang$html$Html_Attributes$class('is-size-7-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6Tablet = _elm_lang$html$Html_Attributes$class('is-size-6-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5Tablet = _elm_lang$html$Html_Attributes$class('is-size-5-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4Tablet = _elm_lang$html$Html_Attributes$class('is-size-4-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3Tablet = _elm_lang$html$Html_Attributes$class('is-size-3-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2Tablet = _elm_lang$html$Html_Attributes$class('is-size-2-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1Tablet = _elm_lang$html$Html_Attributes$class('is-size-1-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7Mobile = _elm_lang$html$Html_Attributes$class('is-size-7-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6Mobile = _elm_lang$html$Html_Attributes$class('is-size-6-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5Mobile = _elm_lang$html$Html_Attributes$class('is-size-5-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4Mobile = _elm_lang$html$Html_Attributes$class('is-size-4-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3Mobile = _elm_lang$html$Html_Attributes$class('is-size-3-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2Mobile = _elm_lang$html$Html_Attributes$class('is-size-2-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1Mobile = _elm_lang$html$Html_Attributes$class('is-size-1-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize7 = _elm_lang$html$Html_Attributes$class('is-size-7');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize6 = _elm_lang$html$Html_Attributes$class('is-size-6');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize5 = _elm_lang$html$Html_Attributes$class('is-size-5');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize4 = _elm_lang$html$Html_Attributes$class('is-size-4');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize3 = _elm_lang$html$Html_Attributes$class('is-size-3');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize2 = _elm_lang$html$Html_Attributes$class('is-size-2');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSize1 = _elm_lang$html$Html_Attributes$class('is-size-1');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundWhiteBis = _elm_lang$html$Html_Attributes$class('has-background-white-bis');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundWhiteTer = _elm_lang$html$Html_Attributes$class('has-background-white-ter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundGreyLighter = _elm_lang$html$Html_Attributes$class('has-background-grey-lighter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundGreyLight = _elm_lang$html$Html_Attributes$class('has-background-grey-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundGrey = _elm_lang$html$Html_Attributes$class('has-background-grey');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundGreyDark = _elm_lang$html$Html_Attributes$class('has-background-grey-dark');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundGreyDarker = _elm_lang$html$Html_Attributes$class('has-background-grey-darker');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundBlackTer = _elm_lang$html$Html_Attributes$class('has-background-black-ter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundBlackBis = _elm_lang$html$Html_Attributes$class('has-background-black-bis');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundDanger = _elm_lang$html$Html_Attributes$class('has-background-danger');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundWarning = _elm_lang$html$Html_Attributes$class('has-background-warning');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundSuccess = _elm_lang$html$Html_Attributes$class('has-background-success');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundLink = _elm_lang$html$Html_Attributes$class('has-background-link');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundInfo = _elm_lang$html$Html_Attributes$class('has-background-info');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundPrimary = _elm_lang$html$Html_Attributes$class('has-background-primary');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundDark = _elm_lang$html$Html_Attributes$class('has-background-dark');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundLight = _elm_lang$html$Html_Attributes$class('has-background-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundBlack = _elm_lang$html$Html_Attributes$class('has-background-black');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasBackgroundWhite = _elm_lang$html$Html_Attributes$class('has-background-white');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWhiteBis = _elm_lang$html$Html_Attributes$class('has-text-white-bis');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWhiteTer = _elm_lang$html$Html_Attributes$class('has-text-white-ter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextGreyLighter = _elm_lang$html$Html_Attributes$class('has-text-grey-lighter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextGreyLight = _elm_lang$html$Html_Attributes$class('has-text-grey-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextGrey = _elm_lang$html$Html_Attributes$class('has-text-grey');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextGreyDark = _elm_lang$html$Html_Attributes$class('has-text-grey-dark');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextGreyDarker = _elm_lang$html$Html_Attributes$class('has-text-grey-darker');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextBlackTer = _elm_lang$html$Html_Attributes$class('has-text-black-ter');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextBlackBis = _elm_lang$html$Html_Attributes$class('has-text-black-bis');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextDanger = _elm_lang$html$Html_Attributes$class('has-text-danger');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWarning = _elm_lang$html$Html_Attributes$class('has-text-warning');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextSuccess = _elm_lang$html$Html_Attributes$class('has-text-success');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLink = _elm_lang$html$Html_Attributes$class('has-text-link');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextInfo = _elm_lang$html$Html_Attributes$class('has-text-info');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextPrimary = _elm_lang$html$Html_Attributes$class('has-text-primary');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextDark = _elm_lang$html$Html_Attributes$class('has-text-dark');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextLight = _elm_lang$html$Html_Attributes$class('has-text-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextBlack = _elm_lang$html$Html_Attributes$class('has-text-black');
+var _surprisetalk$elm_bulma$Bulma_Classes$hasTextWhite = _elm_lang$html$Html_Attributes$class('has-text-white');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenFullHD = _elm_lang$html$Html_Attributes$class('is-hidden-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenWidescreen = _elm_lang$html$Html_Attributes$class('is-hidden-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenDesktop = _elm_lang$html$Html_Attributes$class('is-hidden-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenTablet = _elm_lang$html$Html_Attributes$class('is-hidden-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenTouch = _elm_lang$html$Html_Attributes$class('is-hidden-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-hidden-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenDesktopOnly = _elm_lang$html$Html_Attributes$class('is-hidden-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenTabletOnly = _elm_lang$html$Html_Attributes$class('is-hidden-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHiddenMobile = _elm_lang$html$Html_Attributes$class('is-hidden-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexFullHD = _elm_lang$html$Html_Attributes$class('is-inline-flex-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexWidescreen = _elm_lang$html$Html_Attributes$class('is-inline-flex-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexDesktop = _elm_lang$html$Html_Attributes$class('is-inline-flex-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexTablet = _elm_lang$html$Html_Attributes$class('is-inline-flex-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexTouch = _elm_lang$html$Html_Attributes$class('is-inline-flex-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-inline-flex-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexDesktopOnly = _elm_lang$html$Html_Attributes$class('is-inline-flex-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexTabletOnly = _elm_lang$html$Html_Attributes$class('is-inline-flex-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlexMobile = _elm_lang$html$Html_Attributes$class('is-inline-flex-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockFullHD = _elm_lang$html$Html_Attributes$class('is-inline-block-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockWidescreen = _elm_lang$html$Html_Attributes$class('is-inline-block-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockDesktop = _elm_lang$html$Html_Attributes$class('is-inline-block-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockTablet = _elm_lang$html$Html_Attributes$class('is-inline-block-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockTouch = _elm_lang$html$Html_Attributes$class('is-inline-block-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-inline-block-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockDesktopOnly = _elm_lang$html$Html_Attributes$class('is-inline-block-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockTabletOnly = _elm_lang$html$Html_Attributes$class('is-inline-block-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlockMobile = _elm_lang$html$Html_Attributes$class('is-inline-block-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFullHD = _elm_lang$html$Html_Attributes$class('is-inline-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineWidescreen = _elm_lang$html$Html_Attributes$class('is-inline-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineDesktop = _elm_lang$html$Html_Attributes$class('is-inline-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineTablet = _elm_lang$html$Html_Attributes$class('is-inline-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineTouch = _elm_lang$html$Html_Attributes$class('is-inline-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-inline-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineDesktopOnly = _elm_lang$html$Html_Attributes$class('is-inline-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineTabletOnly = _elm_lang$html$Html_Attributes$class('is-inline-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineMobile = _elm_lang$html$Html_Attributes$class('is-inline-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexFullHD = _elm_lang$html$Html_Attributes$class('is-flex-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexWidescreen = _elm_lang$html$Html_Attributes$class('is-flex-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexDesktop = _elm_lang$html$Html_Attributes$class('is-flex-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexTablet = _elm_lang$html$Html_Attributes$class('is-flex-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexTouch = _elm_lang$html$Html_Attributes$class('is-flex-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-flex-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexDesktopOnly = _elm_lang$html$Html_Attributes$class('is-flex-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexTabletOnly = _elm_lang$html$Html_Attributes$class('is-flex-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlexMobile = _elm_lang$html$Html_Attributes$class('is-flex-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockFullHD = _elm_lang$html$Html_Attributes$class('is-block-fullhd');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockWidescreen = _elm_lang$html$Html_Attributes$class('is-block-widescreen');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockDesktop = _elm_lang$html$Html_Attributes$class('is-block-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockTablet = _elm_lang$html$Html_Attributes$class('is-block-tablet');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockTouch = _elm_lang$html$Html_Attributes$class('is-block-touch');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockWidescreenOnly = _elm_lang$html$Html_Attributes$class('is-block-widscreen-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockDesktopOnly = _elm_lang$html$Html_Attributes$class('is-block-desktop-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockTabletOnly = _elm_lang$html$Html_Attributes$class('is-block-tablet-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlockMobile = _elm_lang$html$Html_Attributes$class('is-block-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHidden = _elm_lang$html$Html_Attributes$class('is-hidden');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlex = _elm_lang$html$Html_Attributes$class('is-inline-flex');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlock = _elm_lang$html$Html_Attributes$class('is-inline-block');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInline = _elm_lang$html$Html_Attributes$class('is-inline');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFlex = _elm_lang$html$Html_Attributes$class('is-flex');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlock = _elm_lang$html$Html_Attributes$class('is-block');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSROnly = _elm_lang$html$Html_Attributes$class('is-sr-only');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInvisible = _elm_lang$html$Html_Attributes$class('is-invisible');
+var _surprisetalk$elm_bulma$Bulma_Classes$isUnselectable = _elm_lang$html$Html_Attributes$class('is-unselectable');
+var _surprisetalk$elm_bulma$Bulma_Classes$isShadowless = _elm_lang$html$Html_Attributes$class('is-shadowless');
+var _surprisetalk$elm_bulma$Bulma_Classes$isRadiusless = _elm_lang$html$Html_Attributes$class('is-radiusless');
+var _surprisetalk$elm_bulma$Bulma_Classes$isClipped = _elm_lang$html$Html_Attributes$class('is-clipped');
+var _surprisetalk$elm_bulma$Bulma_Classes$isOverlay = _elm_lang$html$Html_Attributes$class('is-overlay');
+var _surprisetalk$elm_bulma$Bulma_Classes$isPaddingless = _elm_lang$html$Html_Attributes$class('is-paddingless');
+var _surprisetalk$elm_bulma$Bulma_Classes$isMarginless = _elm_lang$html$Html_Attributes$class('is-marginless');
+var _surprisetalk$elm_bulma$Bulma_Classes$isPulledRight = _elm_lang$html$Html_Attributes$class('is-pulled-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$isPulledLeft = _elm_lang$html$Html_Attributes$class('is-pulled-left');
+var _surprisetalk$elm_bulma$Bulma_Classes$isClearfix = _elm_lang$html$Html_Attributes$class('is-clearfix');
+var _surprisetalk$elm_bulma$Bulma_Classes$isDesktop = _elm_lang$html$Html_Attributes$class('is-desktop');
+var _surprisetalk$elm_bulma$Bulma_Classes$isMobile = _elm_lang$html$Html_Attributes$class('is-mobile');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHoverable = _elm_lang$html$Html_Attributes$class('is-hoverable');
+var _surprisetalk$elm_bulma$Bulma_Classes$isUp = _elm_lang$html$Html_Attributes$class('is-up');
+var _surprisetalk$elm_bulma$Bulma_Classes$isRight = _elm_lang$html$Html_Attributes$class('is-right');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBoxed = _elm_lang$html$Html_Attributes$class('is-boxed');
+var _surprisetalk$elm_bulma$Bulma_Classes$isRounded = _elm_lang$html$Html_Attributes$class('is-rounded');
+var _surprisetalk$elm_bulma$Bulma_Classes$is12 = _elm_lang$html$Html_Attributes$class('is-12');
+var _surprisetalk$elm_bulma$Bulma_Classes$is11 = _elm_lang$html$Html_Attributes$class('is-11');
+var _surprisetalk$elm_bulma$Bulma_Classes$is10 = _elm_lang$html$Html_Attributes$class('is-10');
+var _surprisetalk$elm_bulma$Bulma_Classes$is09 = _elm_lang$html$Html_Attributes$class('is-9');
+var _surprisetalk$elm_bulma$Bulma_Classes$is08 = _elm_lang$html$Html_Attributes$class('is-8');
+var _surprisetalk$elm_bulma$Bulma_Classes$is07 = _elm_lang$html$Html_Attributes$class('is-7');
+var _surprisetalk$elm_bulma$Bulma_Classes$is06 = _elm_lang$html$Html_Attributes$class('is-6');
+var _surprisetalk$elm_bulma$Bulma_Classes$is05 = _elm_lang$html$Html_Attributes$class('is-5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is04 = _elm_lang$html$Html_Attributes$class('is-4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is03 = _elm_lang$html$Html_Attributes$class('is-3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is02 = _elm_lang$html$Html_Attributes$class('is-2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is01 = _elm_lang$html$Html_Attributes$class('is-1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is00 = _elm_lang$html$Html_Attributes$class('is-0');
+var _surprisetalk$elm_bulma$Bulma_Classes$is9 = _elm_lang$html$Html_Attributes$class('is-9');
+var _surprisetalk$elm_bulma$Bulma_Classes$is8 = _elm_lang$html$Html_Attributes$class('is-8');
+var _surprisetalk$elm_bulma$Bulma_Classes$is7 = _elm_lang$html$Html_Attributes$class('is-7');
+var _surprisetalk$elm_bulma$Bulma_Classes$is6 = _elm_lang$html$Html_Attributes$class('is-6');
+var _surprisetalk$elm_bulma$Bulma_Classes$is5 = _elm_lang$html$Html_Attributes$class('is-5');
+var _surprisetalk$elm_bulma$Bulma_Classes$is4 = _elm_lang$html$Html_Attributes$class('is-4');
+var _surprisetalk$elm_bulma$Bulma_Classes$is3 = _elm_lang$html$Html_Attributes$class('is-3');
+var _surprisetalk$elm_bulma$Bulma_Classes$is2 = _elm_lang$html$Html_Attributes$class('is-2');
+var _surprisetalk$elm_bulma$Bulma_Classes$is1 = _elm_lang$html$Html_Attributes$class('is-1');
+var _surprisetalk$elm_bulma$Bulma_Classes$is0 = _elm_lang$html$Html_Attributes$class('is-0');
+var _surprisetalk$elm_bulma$Bulma_Classes$isStatic = _elm_lang$html$Html_Attributes$class('is-static');
+var _surprisetalk$elm_bulma$Bulma_Classes$isLoading = _elm_lang$html$Html_Attributes$class('is-loading');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFocused = _elm_lang$html$Html_Attributes$class('is-focused');
+var _surprisetalk$elm_bulma$Bulma_Classes$isHovered = _elm_lang$html$Html_Attributes$class('is-hovered');
+var _surprisetalk$elm_bulma$Bulma_Classes$isActive = _elm_lang$html$Html_Attributes$class('is-active');
+var _surprisetalk$elm_bulma$Bulma_Classes$isFullHeight = _elm_lang$html$Html_Attributes$class('is-fullheight');
+var _surprisetalk$elm_bulma$Bulma_Classes$isLarge = _elm_lang$html$Html_Attributes$class('is-large');
+var _surprisetalk$elm_bulma$Bulma_Classes$isMedium = _elm_lang$html$Html_Attributes$class('is-medium');
+var _surprisetalk$elm_bulma$Bulma_Classes$isNormal = _elm_lang$html$Html_Attributes$class('is-normal');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSmall = _elm_lang$html$Html_Attributes$class('is-small');
+var _surprisetalk$elm_bulma$Bulma_Classes$isLink = _elm_lang$html$Html_Attributes$class('is-link');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBlack = _elm_lang$html$Html_Attributes$class('is-black');
+var _surprisetalk$elm_bulma$Bulma_Classes$isWhite = _elm_lang$html$Html_Attributes$class('is-white');
+var _surprisetalk$elm_bulma$Bulma_Classes$isDark = _elm_lang$html$Html_Attributes$class('is-dark');
+var _surprisetalk$elm_bulma$Bulma_Classes$isLight = _elm_lang$html$Html_Attributes$class('is-light');
+var _surprisetalk$elm_bulma$Bulma_Classes$isDanger = _elm_lang$html$Html_Attributes$class('is-danger');
+var _surprisetalk$elm_bulma$Bulma_Classes$isWarning = _elm_lang$html$Html_Attributes$class('is-warning');
+var _surprisetalk$elm_bulma$Bulma_Classes$isSuccess = _elm_lang$html$Html_Attributes$class('is-success');
+var _surprisetalk$elm_bulma$Bulma_Classes$isInfo = _elm_lang$html$Html_Attributes$class('is-info');
+var _surprisetalk$elm_bulma$Bulma_Classes$isPrimary = _elm_lang$html$Html_Attributes$class('is-primary');
+var _surprisetalk$elm_bulma$Bulma_Classes$isBold = _elm_lang$html$Html_Attributes$class('is-bold');
+var _surprisetalk$elm_bulma$Bulma_Classes$none = _elm_lang$html$Html_Attributes$class('');
+var _surprisetalk$elm_bulma$Helpers$node = F3(
+	function (tag, attrs_, attrs) {
+		return A2(
+			_elm_lang$html$Html$node,
+			tag,
+			A2(_elm_lang$core$Basics_ops['++'], attrs, attrs_));
+	});
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['+:'] = F2(
+	function (xs, x) {
+		return A2(
+			_elm_lang$core$Basics_ops['++'],
+			xs,
+			{
+				ctor: '::',
+				_0: x,
+				_1: {ctor: '[]'}
+			});
+	});
+var _surprisetalk$elm_bulma$Helpers$mvalues = A3(
+	_elm_lang$core$Basics$flip,
+	_elm_lang$core$List$foldr,
+	{ctor: '[]'},
+	F2(
+		function (x, xs) {
+			var _p0 = x;
+			if (_p0.ctor === 'Nothing') {
+				return xs;
+			} else {
+				return {ctor: '::', _0: _p0._0, _1: xs};
+			}
+		}));
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['*?'] = _elm_lang$core$Maybe$map;
+var _surprisetalk$elm_bulma$Helpers$uncurry4 = F2(
+	function (f, _p1) {
+		var _p2 = _p1;
+		return A4(f, _p2._0, _p2._1, _p2._2, _p2._3);
+	});
+var _surprisetalk$elm_bulma$Helpers$curry4 = F5(
+	function (f, a, b, c, d) {
+		return f(
+			{ctor: '_Tuple4', _0: a, _1: b, _2: c, _3: d});
+	});
+var _surprisetalk$elm_bulma$Helpers$uncurry3 = F2(
+	function (f, _p3) {
+		var _p4 = _p3;
+		return A3(f, _p4._0, _p4._1, _p4._2);
+	});
+var _surprisetalk$elm_bulma$Helpers$curry3 = F4(
+	function (f, a, b, c) {
+		return f(
+			{ctor: '_Tuple3', _0: a, _1: b, _2: c});
+	});
+var _surprisetalk$elm_bulma$Helpers$fl = _elm_lang$core$Basics$flip;
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['?.'] = _surprisetalk$elm_bulma$Helpers$fl(_elm_lang$core$Maybe$withDefault);
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['?*'] = _surprisetalk$elm_bulma$Helpers$fl(
+	F2(
+		function (x, y) {
+			return A2(_surprisetalk$elm_bulma$Helpers_ops['*?'], x, y);
+		}));
+var _surprisetalk$elm_bulma$Helpers$ls = A2(
+	_surprisetalk$elm_bulma$Helpers$fl,
+	F2(
+		function (x, y) {
+			return {ctor: '::', _0: x, _1: y};
+		}),
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Helpers$y = _elm_lang$core$Basics$always;
+var _surprisetalk$elm_bulma$Helpers$setFirst = function (_p5) {
+	return _elm_lang$core$Tuple$mapFirst(
+		_surprisetalk$elm_bulma$Helpers$y(_p5));
+};
+var _surprisetalk$elm_bulma$Helpers$setSecond = function (_p6) {
+	return _elm_lang$core$Tuple$mapSecond(
+		_surprisetalk$elm_bulma$Helpers$y(_p6));
+};
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['>>>'] = F2(
+	function (x, y) {
+		return A2(_surprisetalk$elm_bulma$Helpers_ops['>>>'], x, y);
+	});
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['<<<'] = F2(
+	function (x, y) {
+		return A2(_surprisetalk$elm_bulma$Helpers_ops['<<<'], x, y);
+	});
+var _surprisetalk$elm_bulma$Helpers_ops = _surprisetalk$elm_bulma$Helpers_ops || {};
+_surprisetalk$elm_bulma$Helpers_ops['=>'] = F2(
+	function (v0, v1) {
+		return {ctor: '_Tuple2', _0: v0, _1: v1};
+	});
+var _surprisetalk$elm_bulma$Bulma_Modifiers$displayByDevice = function (_p0) {
+	var _p1 = _p0;
+	return _elm_lang$html$Html_Attributes$class(
+		A2(
+			_elm_lang$core$String$join,
+			' ',
+			{
+				ctor: '::',
+				_0: function () {
+					var _p2 = _p1.mobile;
+					switch (_p2.ctor) {
+						case 'Block':
+							return 'is-block-mobile';
+						case 'Flex':
+							return 'is-flex-mobile';
+						case 'Inline':
+							return 'is-inline-mobile';
+						case 'InlineBlock':
+							return 'is-inline-block-mobile';
+						case 'InlineFlex':
+							return 'is-inline-flex-mobile';
+						default:
+							return 'is-hidden-mobile';
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p3 = _p1.tablet;
+						switch (_p3.ctor) {
+							case 'Block':
+								return 'is-block-tablet-only';
+							case 'Flex':
+								return 'is-flex-tablet-only';
+							case 'Inline':
+								return 'is-inline-tablet-only';
+							case 'InlineBlock':
+								return 'is-inline-block-tablet-only';
+							case 'InlineFlex':
+								return 'is-inline-flex-tablet-only';
+							default:
+								return 'is-hidden-tablet-only';
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p4 = _p1.desktop;
+							switch (_p4.ctor) {
+								case 'Block':
+									return 'is-block-desktop-only';
+								case 'Flex':
+									return 'is-flex-desktop-only';
+								case 'Inline':
+									return 'is-inline-desktop-only';
+								case 'InlineBlock':
+									return 'is-inline-block-desktop-only';
+								case 'InlineFlex':
+									return 'is-inline-flex-desktop-only';
+								default:
+									return 'is-hidden-desktop-only';
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p5 = _p1.widescreen;
+								switch (_p5.ctor) {
+									case 'Block':
+										return 'is-block-widescreen-only';
+									case 'Flex':
+										return 'is-flex-widescreen-only';
+									case 'Inline':
+										return 'is-inline-widescreen-only';
+									case 'InlineBlock':
+										return 'is-inline-block-widescreen-only';
+									case 'InlineFlex':
+										return 'is-inline-flex-widescreen-only';
+									default:
+										return 'is-hidden-widescreen-only';
+								}
+							}(),
+							_1: {
+								ctor: '::',
+								_0: function () {
+									var _p6 = _p1.fullHD;
+									switch (_p6.ctor) {
+										case 'Block':
+											return 'is-block-fullHD-only';
+										case 'Flex':
+											return 'is-flex-fullHD-only';
+										case 'Inline':
+											return 'is-inline-fullHD-only';
+										case 'InlineBlock':
+											return 'is-inline-block-fullHD-only';
+										case 'InlineFlex':
+											return 'is-inline-flex-fullHD-only';
+										default:
+											return 'is-hidden-fullHD';
+									}
+								}(),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}));
+};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$display = function (d) {
+	var _p7 = d;
+	switch (_p7.ctor) {
+		case 'Block':
+			return _surprisetalk$elm_bulma$Bulma_Classes$isBlock;
+		case 'Flex':
+			return _surprisetalk$elm_bulma$Bulma_Classes$isFlex;
+		case 'Inline':
+			return _surprisetalk$elm_bulma$Bulma_Classes$isInline;
+		case 'InlineBlock':
+			return _surprisetalk$elm_bulma$Bulma_Classes$isInlineBlock;
+		case 'InlineFlex':
+			return _surprisetalk$elm_bulma$Bulma_Classes$isInlineFlex;
+		default:
+			return _surprisetalk$elm_bulma$Bulma_Classes$isHidden;
+	}
+};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$screenReaderOnly = _surprisetalk$elm_bulma$Bulma_Classes$isSROnly;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$invisible = _surprisetalk$elm_bulma$Bulma_Classes$isInvisible;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$shadowless = _surprisetalk$elm_bulma$Bulma_Classes$isShadowless;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$radiusless = _surprisetalk$elm_bulma$Bulma_Classes$isRadiusless;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$clipped = _surprisetalk$elm_bulma$Bulma_Classes$isClipped;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$paddingless = _surprisetalk$elm_bulma$Bulma_Classes$isPaddingless;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$marginless = _surprisetalk$elm_bulma$Bulma_Classes$isMarginless;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$fullWidth = _surprisetalk$elm_bulma$Bulma_Classes$isFullWidth;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$overlay = _surprisetalk$elm_bulma$Bulma_Classes$isOverlay;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$unselectable = _surprisetalk$elm_bulma$Bulma_Classes$isUnselectable;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$pulledRight = _surprisetalk$elm_bulma$Bulma_Classes$isPulledRight;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$pulledLeft = _surprisetalk$elm_bulma$Bulma_Classes$isPulledLeft;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$clearfix = _surprisetalk$elm_bulma$Bulma_Classes$isClearfix;
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Devices = F5(
+	function (a, b, c, d, e) {
+		return {mobile: a, tablet: b, desktop: c, widescreen: d, fullHD: e};
+	});
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Large = {ctor: 'Large'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Medium = {ctor: 'Medium'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Standard = {ctor: 'Standard'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Small = {ctor: 'Small'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width11 = {ctor: 'Width11'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width10 = {ctor: 'Width10'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width9 = {ctor: 'Width9'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width8 = {ctor: 'Width8'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width7 = {ctor: 'Width7'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width6 = {ctor: 'Width6'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width5 = {ctor: 'Width5'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width4 = {ctor: 'Width4'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width3 = {ctor: 'Width3'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width2 = {ctor: 'Width2'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Width1 = {ctor: 'Width1'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Auto = {ctor: 'Auto'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Loading = {ctor: 'Loading'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Active = {ctor: 'Active'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Focus = {ctor: 'Focus'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Hover = {ctor: 'Hover'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Blur = {ctor: 'Blur'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Danger = {ctor: 'Danger'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Warning = {ctor: 'Warning'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Success = {ctor: 'Success'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Info = {ctor: 'Info'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Link = {ctor: 'Link'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Primary = {ctor: 'Primary'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Black = {ctor: 'Black'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Dark = {ctor: 'Dark'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Light = {ctor: 'Light'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$White = {ctor: 'White'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Default = {ctor: 'Default'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Right = {ctor: 'Right'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Centered = {ctor: 'Centered'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Left = {ctor: 'Left'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Bottom = {ctor: 'Bottom'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Top = {ctor: 'Top'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Down = {ctor: 'Down'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Up = {ctor: 'Up'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$InlineFlex = {ctor: 'InlineFlex'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$InlineBlock = {ctor: 'InlineBlock'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Inline = {ctor: 'Inline'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Hidden = {ctor: 'Hidden'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Flex = {ctor: 'Flex'};
+var _surprisetalk$elm_bulma$Bulma_Modifiers$Block = {ctor: 'Block'};
+var _surprisetalk$elm_bulma$Bulma_Columns$narrowColumnModifiers = {
+	offset: _surprisetalk$elm_bulma$Bulma_Modifiers$Auto,
+	widths: {mobile: _elm_lang$core$Maybe$Nothing, tablet: _elm_lang$core$Maybe$Nothing, desktop: _elm_lang$core$Maybe$Nothing, widescreen: _elm_lang$core$Maybe$Nothing, fullHD: _elm_lang$core$Maybe$Nothing}
+};
+var _surprisetalk$elm_bulma$Bulma_Columns$columnModifiers = {
+	offset: _surprisetalk$elm_bulma$Bulma_Modifiers$Auto,
+	widths: {
+		mobile: _elm_lang$core$Maybe$Just(_surprisetalk$elm_bulma$Bulma_Modifiers$Auto),
+		tablet: _elm_lang$core$Maybe$Just(_surprisetalk$elm_bulma$Bulma_Modifiers$Auto),
+		desktop: _elm_lang$core$Maybe$Just(_surprisetalk$elm_bulma$Bulma_Modifiers$Auto),
+		widescreen: _elm_lang$core$Maybe$Just(_surprisetalk$elm_bulma$Bulma_Modifiers$Auto),
+		fullHD: _elm_lang$core$Maybe$Just(_surprisetalk$elm_bulma$Bulma_Modifiers$Auto)
+	}
+};
+var _surprisetalk$elm_bulma$Bulma_Columns$column = function (_p0) {
+	var _p1 = _p0;
+	var _p8 = _p1.widths;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$column,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p2 = _p8.mobile;
+					if (_p2.ctor === 'Just') {
+						switch (_p2._0.ctor) {
+							case 'Auto':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Width1':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is01Mobile;
+							case 'Width2':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is02Mobile;
+							case 'Width3':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is03Mobile;
+							case 'Width4':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is04Mobile;
+							case 'Width5':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is05Mobile;
+							case 'Width6':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is06Mobile;
+							case 'Width7':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is07Mobile;
+							case 'Width8':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is08Mobile;
+							case 'Width9':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is09Mobile;
+							case 'Width10':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is10Mobile;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$is11Mobile;
+						}
+					} else {
+						return _surprisetalk$elm_bulma$Bulma_Classes$isNarrowMobile;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p3 = _p8.tablet;
+						if (_p3.ctor === 'Just') {
+							switch (_p3._0.ctor) {
+								case 'Auto':
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								case 'Width1':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is01Tablet;
+								case 'Width2':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is02Tablet;
+								case 'Width3':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is03Tablet;
+								case 'Width4':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is04Tablet;
+								case 'Width5':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is05Tablet;
+								case 'Width6':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is06Tablet;
+								case 'Width7':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is07Tablet;
+								case 'Width8':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is08Tablet;
+								case 'Width9':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is09Tablet;
+								case 'Width10':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is10Tablet;
+								default:
+									return _surprisetalk$elm_bulma$Bulma_Classes$is11Tablet;
+							}
+						} else {
+							return _surprisetalk$elm_bulma$Bulma_Classes$isNarrowTablet;
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p4 = _p8.desktop;
+							if (_p4.ctor === 'Just') {
+								switch (_p4._0.ctor) {
+									case 'Auto':
+										return _surprisetalk$elm_bulma$Bulma_Classes$none;
+									case 'Width1':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is01Desktop;
+									case 'Width2':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is02Desktop;
+									case 'Width3':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is03Desktop;
+									case 'Width4':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is04Desktop;
+									case 'Width5':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is05Desktop;
+									case 'Width6':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is06Desktop;
+									case 'Width7':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is07Desktop;
+									case 'Width8':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is08Desktop;
+									case 'Width9':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is09Desktop;
+									case 'Width10':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is10Desktop;
+									default:
+										return _surprisetalk$elm_bulma$Bulma_Classes$is11Desktop;
+								}
+							} else {
+								return _surprisetalk$elm_bulma$Bulma_Classes$isNarrowDesktop;
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p5 = _p8.widescreen;
+								if (_p5.ctor === 'Just') {
+									switch (_p5._0.ctor) {
+										case 'Auto':
+											return _surprisetalk$elm_bulma$Bulma_Classes$none;
+										case 'Width1':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is01Widescreen;
+										case 'Width2':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is02Widescreen;
+										case 'Width3':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is03Widescreen;
+										case 'Width4':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is04Widescreen;
+										case 'Width5':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is05Widescreen;
+										case 'Width6':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is06Widescreen;
+										case 'Width7':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is07Widescreen;
+										case 'Width8':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is08Widescreen;
+										case 'Width9':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is09Widescreen;
+										case 'Width10':
+											return _surprisetalk$elm_bulma$Bulma_Classes$is10Widescreen;
+										default:
+											return _surprisetalk$elm_bulma$Bulma_Classes$is11Widescreen;
+									}
+								} else {
+									return _surprisetalk$elm_bulma$Bulma_Classes$isNarrowWidescreen;
+								}
+							}(),
+							_1: {
+								ctor: '::',
+								_0: function () {
+									var _p6 = _p8.fullHD;
+									if (_p6.ctor === 'Just') {
+										switch (_p6._0.ctor) {
+											case 'Auto':
+												return _surprisetalk$elm_bulma$Bulma_Classes$none;
+											case 'Width1':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is01FullHD;
+											case 'Width2':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is02FullHD;
+											case 'Width3':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is03FullHD;
+											case 'Width4':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is04FullHD;
+											case 'Width5':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is05FullHD;
+											case 'Width6':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is06FullHD;
+											case 'Width7':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is07FullHD;
+											case 'Width8':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is08FullHD;
+											case 'Width9':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is09FullHD;
+											case 'Width10':
+												return _surprisetalk$elm_bulma$Bulma_Classes$is10FullHD;
+											default:
+												return _surprisetalk$elm_bulma$Bulma_Classes$is11FullHD;
+										}
+									} else {
+										return _surprisetalk$elm_bulma$Bulma_Classes$isNarrowFullHD;
+									}
+								}(),
+								_1: {
+									ctor: '::',
+									_0: function () {
+										var _p7 = _p1.offset;
+										switch (_p7.ctor) {
+											case 'Auto':
+												return _surprisetalk$elm_bulma$Bulma_Classes$none;
+											case 'Width1':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset01;
+											case 'Width2':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset02;
+											case 'Width3':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset03;
+											case 'Width4':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset04;
+											case 'Width5':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset05;
+											case 'Width6':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset06;
+											case 'Width7':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset07;
+											case 'Width8':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset08;
+											case 'Width9':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset09;
+											case 'Width10':
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset10;
+											default:
+												return _surprisetalk$elm_bulma$Bulma_Classes$isOffset11;
+										}
+									}(),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Columns$columns = function (_p9) {
+	var _p10 = _p9;
+	var _p16 = _p10.gap;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$columns,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p11 = _p10.centered;
+					if (_p11 === true) {
+						return _surprisetalk$elm_bulma$Bulma_Classes$isCentered;
+					} else {
+						return _surprisetalk$elm_bulma$Bulma_Classes$none;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p12 = _p10.multiline;
+						if (_p12 === true) {
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMultiline;
+						} else {
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p13 = _p16;
+							if (_p13.ctor === 'Gap0') {
+								return _surprisetalk$elm_bulma$Bulma_Classes$isGapless;
+							} else {
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p14 = _p16;
+								switch (_p14.ctor) {
+									case 'Gap0':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is0;
+									case 'Gap1':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+									case 'Gap2':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+									case 'Gap3':
+										return _surprisetalk$elm_bulma$Bulma_Classes$none;
+									case 'Gap4':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+									case 'Gap5':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+									case 'Gap6':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+									case 'Gap7':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+									default:
+										return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+								}
+							}(),
+							_1: {
+								ctor: '::',
+								_0: function () {
+									var _p15 = _p10.display;
+									switch (_p15.ctor) {
+										case 'MobileAndBeyond':
+											return _surprisetalk$elm_bulma$Bulma_Classes$isMobile;
+										case 'TabletAndBeyond':
+											return _surprisetalk$elm_bulma$Bulma_Classes$none;
+										default:
+											return _surprisetalk$elm_bulma$Bulma_Classes$isDesktop;
+									}
+								}(),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Columns$ColumnsModifiers = F4(
+	function (a, b, c, d) {
+		return {multiline: a, gap: b, display: c, centered: d};
+	});
+var _surprisetalk$elm_bulma$Bulma_Columns$ColumnModifiers = F2(
+	function (a, b) {
+		return {offset: a, widths: b};
+	});
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap8 = {ctor: 'Gap8'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap7 = {ctor: 'Gap7'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap6 = {ctor: 'Gap6'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap5 = {ctor: 'Gap5'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap4 = {ctor: 'Gap4'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap3 = {ctor: 'Gap3'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap2 = {ctor: 'Gap2'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap1 = {ctor: 'Gap1'};
+var _surprisetalk$elm_bulma$Bulma_Columns$Gap0 = {ctor: 'Gap0'};
+var _surprisetalk$elm_bulma$Bulma_Columns$DesktopAndBeyond = {ctor: 'DesktopAndBeyond'};
+var _surprisetalk$elm_bulma$Bulma_Columns$TabletAndBeyond = {ctor: 'TabletAndBeyond'};
+var _surprisetalk$elm_bulma$Bulma_Columns$columnsModifiers = {multiline: false, gap: _surprisetalk$elm_bulma$Bulma_Columns$Gap3, display: _surprisetalk$elm_bulma$Bulma_Columns$TabletAndBeyond, centered: false};
+var _surprisetalk$elm_bulma$Bulma_Columns$MobileAndBeyond = {ctor: 'MobileAndBeyond'};
+var _surprisetalk$elm_bulma$Bulma_Elements$easyTitleWithSubtitle = F4(
+	function (spacing, size, title, subtitle) {
+		return {
+			ctor: '::',
+			_0: A4(
+				_surprisetalk$elm_bulma$Helpers$node,
+				'p',
+				{
+					ctor: '::',
+					_0: _surprisetalk$elm_bulma$Bulma_Classes$title,
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p0 = spacing;
+							if (_p0 === true) {
+								return _surprisetalk$elm_bulma$Bulma_Classes$isNormal;
+							} else {
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p1 = size;
+								switch (_p1.ctor) {
+									case 'H1':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+									case 'H2':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+									case 'H3':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+									case 'H4':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+									case 'H5':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+									default:
+										return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+								}
+							}(),
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				{ctor: '[]'},
+				title),
+			_1: {
+				ctor: '::',
+				_0: A4(
+					_surprisetalk$elm_bulma$Helpers$node,
+					'p',
+					{
+						ctor: '::',
+						_0: _surprisetalk$elm_bulma$Bulma_Classes$subtitle,
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p2 = size;
+								switch (_p2.ctor) {
+									case 'H1':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+									case 'H2':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+									case 'H3':
+										return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+									default:
+										return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+								}
+							}(),
+							_1: {ctor: '[]'}
+						}
+					},
+					{ctor: '[]'},
+					subtitle),
+				_1: {ctor: '[]'}
+			}
+		};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$subtitle = function (size) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		function () {
+			var _p3 = size;
+			switch (_p3.ctor) {
+				case 'H1':
+					return 'h1';
+				case 'H2':
+					return 'h2';
+				case 'H3':
+					return 'h3';
+				case 'H4':
+					return 'h4';
+				case 'H5':
+					return 'h5';
+				default:
+					return 'h6';
+			}
+		}(),
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$subtitle,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p4 = size;
+					switch (_p4.ctor) {
+						case 'H1':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+						case 'H2':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+						case 'H3':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+						case 'H4':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+						case 'H5':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$title = function (size) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		function () {
+			var _p5 = size;
+			switch (_p5.ctor) {
+				case 'H1':
+					return 'h1';
+				case 'H2':
+					return 'h2';
+				case 'H3':
+					return 'h3';
+				case 'H4':
+					return 'h4';
+				case 'H5':
+					return 'h5';
+				default:
+					return 'h6';
+			}
+		}(),
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$title,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p6 = size;
+					switch (_p6.ctor) {
+						case 'H1':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+						case 'H2':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+						case 'H3':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+						case 'H4':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+						case 'H5':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$multitag = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$tags,
+		_1: {
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$hasAddons,
+			_1: {ctor: '[]'}
+		}
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$tags = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$tags,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$deleteTag = function (_p7) {
+	var _p8 = _p7;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'a',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tag,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isDelete,
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p9 = _p8.size;
+						switch (_p9.ctor) {
+							case 'Small':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Standard':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Medium':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p10 = _p8.color;
+							switch (_p10.ctor) {
+								case 'Default':
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								case 'White':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+								case 'Light':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+								case 'Dark':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+								case 'Black':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+								case 'Primary':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+								case 'Info':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+								case 'Success':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+								case 'Warning':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+								case 'Danger':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+								default:
+									return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+							}
+						}(),
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$tag = function (_p11) {
+	var _p12 = _p11;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		_p12.isLink ? 'a' : 'span',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tag,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p13 = _p12.size;
+					switch (_p13.ctor) {
+						case 'Small':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Standard':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Medium':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p14 = _p12.color;
+						switch (_p14.ctor) {
+							case 'Default':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'White':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+							case 'Light':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+							case 'Dark':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+							case 'Black':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+							case 'Primary':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+							case 'Info':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+							case 'Success':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+							case 'Warning':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+							case 'Danger':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$roundedTag = F2(
+	function (mods, attrs) {
+		return A2(
+			_surprisetalk$elm_bulma$Bulma_Elements$tag,
+			mods,
+			{ctor: '::', _0: _surprisetalk$elm_bulma$Bulma_Classes$isRounded, _1: attrs});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyRoundedTag = F2(
+	function (mods, attrs) {
+		return function (_p15) {
+			return A3(
+				_surprisetalk$elm_bulma$Bulma_Elements$roundedTag,
+				mods,
+				attrs,
+				_surprisetalk$elm_bulma$Helpers$ls(
+					_elm_lang$html$Html$text(_p15)));
+		};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyTag = F2(
+	function (mods, attrs) {
+		return function (_p16) {
+			return A3(
+				_surprisetalk$elm_bulma$Bulma_Elements$tag,
+				mods,
+				attrs,
+				_surprisetalk$elm_bulma$Helpers$ls(
+					_elm_lang$html$Html$text(_p16)));
+		};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$tagModifiers = {size: _surprisetalk$elm_bulma$Bulma_Modifiers$Standard, color: _surprisetalk$elm_bulma$Bulma_Modifiers$Default, isLink: false};
+var _surprisetalk$elm_bulma$Bulma_Elements$tableCellHead = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'th',
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Elements$tableCell = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'td',
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Elements$tableRow = function (highlighted) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'tr',
+		{
+			ctor: '::',
+			_0: function () {
+				var _p17 = highlighted;
+				if (_p17 === true) {
+					return _surprisetalk$elm_bulma$Bulma_Classes$isSelected;
+				} else {
+					return _surprisetalk$elm_bulma$Bulma_Classes$none;
+				}
+			}(),
+			_1: {ctor: '[]'}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$tableFoot = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'tfoot',
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Elements$tableBody = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'tbody',
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Elements$tableHead = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'thead',
+	{ctor: '[]'});
+var _surprisetalk$elm_bulma$Bulma_Elements$table = function (_p18) {
+	var _p19 = _p18;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'table',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$table,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p20 = _p19.bordered;
+					if (_p20 === true) {
+						return _surprisetalk$elm_bulma$Bulma_Classes$isBordered;
+					} else {
+						return _surprisetalk$elm_bulma$Bulma_Classes$none;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p21 = _p19.striped;
+						if (_p21 === true) {
+							return _surprisetalk$elm_bulma$Bulma_Classes$isStriped;
+						} else {
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p22 = _p19.narrow;
+							if (_p22 === true) {
+								return _surprisetalk$elm_bulma$Bulma_Classes$isNarrow;
+							} else {
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p23 = _p19.hoverable;
+								if (_p23 === true) {
+									return _surprisetalk$elm_bulma$Bulma_Classes$isHoverable;
+								} else {
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								}
+							}(),
+							_1: {
+								ctor: '::',
+								_0: function () {
+									var _p24 = _p19.fullWidth;
+									if (_p24 === true) {
+										return _surprisetalk$elm_bulma$Bulma_Classes$isFullWidth;
+									} else {
+										return _surprisetalk$elm_bulma$Bulma_Classes$none;
+									}
+								}(),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$tableModifiers = {bordered: false, striped: false, narrow: false, hoverable: false, fullWidth: false};
+var _surprisetalk$elm_bulma$Bulma_Elements$progress = function (_p25) {
+	var _p26 = _p25;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'progress',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$progress,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p27 = _p26.size;
+					switch (_p27.ctor) {
+						case 'Small':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isSmall;
+						case 'Standard':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Medium':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p28 = _p26.color;
+						switch (_p28.ctor) {
+							case 'Default':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'White':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+							case 'Light':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+							case 'Dark':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+							case 'Black':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+							case 'Primary':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+							case 'Info':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+							case 'Success':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+							case 'Warning':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+							case 'Danger':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$easyProgress = F3(
+	function (mods, attrs, val) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$progress,
+			mods,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$value(
+					_elm_lang$core$Basics$toString(
+						_elm_lang$core$Basics$round(val * 100))),
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$max('100'),
+					_1: attrs
+				}
+			},
+			{ctor: '[]'});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$progressModifiers = {size: _surprisetalk$elm_bulma$Bulma_Modifiers$Standard, color: _surprisetalk$elm_bulma$Bulma_Modifiers$Default};
+var _surprisetalk$elm_bulma$Bulma_Elements$notification = function (color) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$notification,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p29 = color;
+					switch (_p29.ctor) {
+						case 'Default':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'White':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+						case 'Light':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+						case 'Dark':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+						case 'Black':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+						case 'Primary':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+						case 'Info':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+						case 'Success':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+						case 'Warning':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+						case 'Danger':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$image = function (shape) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'figure',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$image,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p30 = shape;
+					switch (_p30.ctor) {
+						case 'OneByOne':
+							switch (_p30._0.ctor) {
+								case 'Unbounded':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is1by1;
+								case 'X16':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is16x16;
+								case 'X24':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is24x24;
+								case 'X32':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is32x32;
+								case 'X48':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is48x48;
+								case 'X64':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is64x64;
+								case 'X96':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is96x96;
+								default:
+									return _surprisetalk$elm_bulma$Bulma_Classes$is128x128;
+							}
+						case 'FourByThree':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is4by3;
+						case 'ThreeByTwo':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is3by2;
+						case 'SixteenByNine':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is16by9;
+						case 'TwoByOne':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is2by1;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$easyImage = F3(
+	function (mods, attrs, src) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$image,
+			mods,
+			attrs,
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$img,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$src(src),
+						_1: {ctor: '[]'}
+					},
+					{ctor: '[]'}),
+				_1: {ctor: '[]'}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyPlaceholderImage = F2(
+	function (shape, attrs) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$image,
+			shape,
+			attrs,
+			{
+				ctor: '::',
+				_0: A3(
+					_elm_lang$core$Basics$flip,
+					_elm_lang$html$Html$img,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$src(
+							function (_p31) {
+								var _p32 = _p31;
+								return A2(
+									_elm_lang$core$Basics_ops['++'],
+									'http://bulma.io/images/placeholders/',
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										_elm_lang$core$Basics$toString(_p32._0),
+										A2(
+											_elm_lang$core$Basics_ops['++'],
+											'x',
+											A2(
+												_elm_lang$core$Basics_ops['++'],
+												_elm_lang$core$Basics$toString(_p32._1),
+												'.png'))));
+							}(
+								function () {
+									var _p33 = shape;
+									switch (_p33.ctor) {
+										case 'OneByOne':
+											switch (_p33._0.ctor) {
+												case 'X16':
+													return {ctor: '_Tuple2', _0: 16, _1: 16};
+												case 'X24':
+													return {ctor: '_Tuple2', _0: 24, _1: 24};
+												case 'X32':
+													return {ctor: '_Tuple2', _0: 32, _1: 32};
+												case 'X48':
+													return {ctor: '_Tuple2', _0: 48, _1: 48};
+												case 'X64':
+													return {ctor: '_Tuple2', _0: 64, _1: 64};
+												case 'X96':
+													return {ctor: '_Tuple2', _0: 96, _1: 96};
+												case 'X128':
+													return {ctor: '_Tuple2', _0: 128, _1: 128};
+												default:
+													return {ctor: '_Tuple2', _0: 256, _1: 256};
+											}
+										case 'FourByThree':
+											return {ctor: '_Tuple2', _0: 640, _1: 480};
+										case 'ThreeByTwo':
+											return {ctor: '_Tuple2', _0: 480, _1: 320};
+										case 'SixteenByNine':
+											return {ctor: '_Tuple2', _0: 640, _1: 360};
+										case 'TwoByOne':
+											return {ctor: '_Tuple2', _0: 640, _1: 320};
+										default:
+											return {ctor: '_Tuple2', _0: 256, _1: 256};
+									}
+								}())),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$icon = function (size) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'span',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$icon,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p34 = size;
+					switch (_p34.ctor) {
+						case 'Small':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isSmall;
+						case 'Standard':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Medium':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$delete = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'a',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$delete,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyDelete = F2(
+	function (attrs, msg) {
+		return A2(
+			_surprisetalk$elm_bulma$Bulma_Elements$delete,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Events$onClick(msg),
+				_1: attrs
+			},
+			{ctor: '[]'});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$notificationWithDelete = F3(
+	function (color, attrs, msg) {
+		return function (_p35) {
+			return A3(
+				_surprisetalk$elm_bulma$Bulma_Elements$notification,
+				color,
+				attrs,
+				A2(
+					F2(
+						function (x, y) {
+							return {ctor: '::', _0: x, _1: y};
+						}),
+					A2(
+						_surprisetalk$elm_bulma$Bulma_Elements$easyDelete,
+						{ctor: '[]'},
+						msg),
+					_p35));
+		};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$tagWithDelete = F3(
+	function (mods, attrs, msg) {
+		return function (_p36) {
+			return A3(
+				_surprisetalk$elm_bulma$Bulma_Elements$tag,
+				mods,
+				attrs,
+				A3(
+					_elm_lang$core$Basics$flip,
+					F2(
+						function (x, y) {
+							return A2(_elm_lang$core$Basics_ops['++'], x, y);
+						}),
+					{
+						ctor: '::',
+						_0: A2(
+							_surprisetalk$elm_bulma$Bulma_Elements$easyDelete,
+							{ctor: '[]'},
+							msg),
+						_1: {ctor: '[]'}
+					},
+					_p36));
+		};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyTagWithDelete = F4(
+	function (mods, attrs, msg, str) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$tag,
+			mods,
+			attrs,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text(str),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_surprisetalk$elm_bulma$Bulma_Elements$easyDelete,
+						{ctor: '[]'},
+						msg),
+					_1: {ctor: '[]'}
+				}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyRoundedTagWithDelete = F4(
+	function (mods, attrs, msg, str) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$roundedTag,
+			mods,
+			attrs,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text(str),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_surprisetalk$elm_bulma$Bulma_Elements$easyDelete,
+						{ctor: '[]'},
+						msg),
+					_1: {ctor: '[]'}
+				}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$content = function (size) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$content,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p37 = size;
+					switch (_p37.ctor) {
+						case 'Small':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isSmall;
+						case 'Standard':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Medium':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$buttonModifiers = {disabled: false, outlined: false, inverted: false, rounded: false, $static: false, size: _surprisetalk$elm_bulma$Bulma_Modifiers$Standard, state: _surprisetalk$elm_bulma$Bulma_Modifiers$Blur, color: _surprisetalk$elm_bulma$Bulma_Modifiers$Default, iconLeft: _elm_lang$core$Maybe$Nothing, iconRight: _elm_lang$core$Maybe$Nothing};
+var _surprisetalk$elm_bulma$Bulma_Elements$buttons = function (alignment) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$buttons,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p38 = alignment;
+					switch (_p38.ctor) {
+						case 'Left':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Centered':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isCentered;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isRight;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$connectedButtons = function (alignment) {
+	return function (_p39) {
+		return A2(
+			_surprisetalk$elm_bulma$Bulma_Elements$buttons,
+			alignment,
+			A2(
+				F2(
+					function (x, y) {
+						return {ctor: '::', _0: x, _1: y};
+					}),
+				_elm_lang$html$Html_Attributes$class('has-addons'),
+				_p39));
+	};
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$button = F3(
+	function (_p40, attrs, htmls) {
+		var _p41 = _p40;
+		var _p53 = _p41.color;
+		var iconRight_ = function () {
+			var _p42 = _p41.iconRight;
+			if (_p42.ctor === 'Just') {
+				return {
+					ctor: '::',
+					_0: A3(
+						_surprisetalk$elm_bulma$Bulma_Elements$icon,
+						_p42._0._0,
+						_p42._0._1,
+						{
+							ctor: '::',
+							_0: _p42._0._2,
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				};
+			} else {
+				return {ctor: '[]'};
+			}
+		}();
+		var iconLeft_ = function () {
+			var _p43 = _p41.iconLeft;
+			if (_p43.ctor === 'Just') {
+				return {
+					ctor: '::',
+					_0: A3(
+						_surprisetalk$elm_bulma$Bulma_Elements$icon,
+						_p43._0._0,
+						_p43._0._1,
+						{
+							ctor: '::',
+							_0: _p43._0._2,
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				};
+			} else {
+				return {ctor: '[]'};
+			}
+		}();
+		var htmls_ = function () {
+			var _p44 = htmls;
+			if (_p44.ctor === '[]') {
+				return A2(_elm_lang$core$Basics_ops['++'], iconLeft_, iconRight_);
+			} else {
+				return A2(
+					_elm_lang$core$Basics_ops['++'],
+					iconLeft_,
+					A2(
+						_elm_lang$core$Basics_ops['++'],
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$span,
+								{ctor: '[]'},
+								_p44),
+							_1: {ctor: '[]'}
+						},
+						iconRight_));
+			}
+		}();
+		return A4(
+			_surprisetalk$elm_bulma$Helpers$node,
+			'button',
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$disabled(_p41.disabled),
+				_1: {
+					ctor: '::',
+					_0: _surprisetalk$elm_bulma$Bulma_Classes$button,
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p45 = _p41.$static;
+							if (_p45 === true) {
+								return _surprisetalk$elm_bulma$Bulma_Classes$isStatic;
+							} else {
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							}
+						}(),
+						_1: {
+							ctor: '::',
+							_0: function () {
+								var _p46 = _p41.outlined;
+								if (_p46 === true) {
+									return _surprisetalk$elm_bulma$Bulma_Classes$isOutlined;
+								} else {
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								}
+							}(),
+							_1: {
+								ctor: '::',
+								_0: function () {
+									var _p47 = _p41.inverted;
+									if (_p47 === true) {
+										return _surprisetalk$elm_bulma$Bulma_Classes$isInverted;
+									} else {
+										return _surprisetalk$elm_bulma$Bulma_Classes$none;
+									}
+								}(),
+								_1: {
+									ctor: '::',
+									_0: function () {
+										var _p48 = _p41.rounded;
+										if (_p48 === true) {
+											return _surprisetalk$elm_bulma$Bulma_Classes$isRounded;
+										} else {
+											return _surprisetalk$elm_bulma$Bulma_Classes$none;
+										}
+									}(),
+									_1: {
+										ctor: '::',
+										_0: function () {
+											var _p49 = _p53;
+											if (_p49.ctor === 'Default') {
+												return _surprisetalk$elm_bulma$Bulma_Classes$none;
+											} else {
+												return _surprisetalk$elm_bulma$Bulma_Classes$isSelected;
+											}
+										}(),
+										_1: {
+											ctor: '::',
+											_0: function () {
+												var _p50 = _p53;
+												switch (_p50.ctor) {
+													case 'Default':
+														return _surprisetalk$elm_bulma$Bulma_Classes$none;
+													case 'White':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+													case 'Light':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+													case 'Dark':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+													case 'Black':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+													case 'Primary':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+													case 'Link':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+													case 'Info':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+													case 'Success':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+													case 'Warning':
+														return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+													default:
+														return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+												}
+											}(),
+											_1: {
+												ctor: '::',
+												_0: function () {
+													var _p51 = _p41.size;
+													switch (_p51.ctor) {
+														case 'Small':
+															return _surprisetalk$elm_bulma$Bulma_Classes$isSmall;
+														case 'Standard':
+															return _surprisetalk$elm_bulma$Bulma_Classes$none;
+														case 'Medium':
+															return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+														default:
+															return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+													}
+												}(),
+												_1: {
+													ctor: '::',
+													_0: function () {
+														var _p52 = _p41.state;
+														switch (_p52.ctor) {
+															case 'Blur':
+																return _surprisetalk$elm_bulma$Bulma_Classes$none;
+															case 'Hover':
+																return _surprisetalk$elm_bulma$Bulma_Classes$isHovered;
+															case 'Focus':
+																return _surprisetalk$elm_bulma$Bulma_Classes$isFocused;
+															case 'Active':
+																return _surprisetalk$elm_bulma$Bulma_Classes$isActive;
+															default:
+																return _surprisetalk$elm_bulma$Bulma_Classes$isLoading;
+														}
+													}(),
+													_1: {ctor: '[]'}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			attrs,
+			htmls_);
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$easyButton = F4(
+	function (mods, attrs, msg, str) {
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Elements$button,
+			mods,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Events$onClick(msg),
+				_1: attrs
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text(str),
+				_1: {ctor: '[]'}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$box = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$box,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$ButtonModifiers = function (a) {
+	return function (b) {
+		return function (c) {
+			return function (d) {
+				return function (e) {
+					return function (f) {
+						return function (g) {
+							return function (h) {
+								return function (i) {
+									return function (j) {
+										return {disabled: a, outlined: b, inverted: c, rounded: d, $static: e, size: f, state: g, color: h, iconLeft: i, iconRight: j};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$ProgressModifiers = F2(
+	function (a, b) {
+		return {size: a, color: b};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$TableModifiers = F5(
+	function (a, b, c, d, e) {
+		return {bordered: a, striped: b, narrow: c, hoverable: d, fullWidth: e};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$TagModifiers = F3(
+	function (a, b, c) {
+		return {size: a, color: b, isLink: c};
+	});
+var _surprisetalk$elm_bulma$Bulma_Elements$TwoByOne = {ctor: 'TwoByOne'};
+var _surprisetalk$elm_bulma$Bulma_Elements$SixteenByNine = {ctor: 'SixteenByNine'};
+var _surprisetalk$elm_bulma$Bulma_Elements$ThreeByTwo = {ctor: 'ThreeByTwo'};
+var _surprisetalk$elm_bulma$Bulma_Elements$FourByThree = {ctor: 'FourByThree'};
+var _surprisetalk$elm_bulma$Bulma_Elements$OneByOne = function (a) {
+	return {ctor: 'OneByOne', _0: a};
+};
+var _surprisetalk$elm_bulma$Bulma_Elements$Natural = {ctor: 'Natural'};
+var _surprisetalk$elm_bulma$Bulma_Elements$Unbounded = {ctor: 'Unbounded'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X128 = {ctor: 'X128'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X96 = {ctor: 'X96'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X64 = {ctor: 'X64'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X48 = {ctor: 'X48'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X32 = {ctor: 'X32'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X24 = {ctor: 'X24'};
+var _surprisetalk$elm_bulma$Bulma_Elements$X16 = {ctor: 'X16'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H6 = {ctor: 'H6'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H5 = {ctor: 'H5'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H4 = {ctor: 'H4'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H3 = {ctor: 'H3'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H2 = {ctor: 'H2'};
+var _surprisetalk$elm_bulma$Bulma_Elements$H1 = {ctor: 'H1'};
+var _surprisetalk$elm_bulma$Bulma_Layout$tileChild = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isChild,
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p0 = width;
+						switch (_p0.ctor) {
+							case 'Auto':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Width1':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+							case 'Width2':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+							case 'Width3':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+							case 'Width4':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+							case 'Width5':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+							case 'Width6':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+							case 'Width7':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+							case 'Width8':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+							case 'Width9':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+							case 'Width10':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$verticalTileParent = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isParent,
+				_1: {
+					ctor: '::',
+					_0: _surprisetalk$elm_bulma$Bulma_Classes$isVertical,
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p1 = width;
+							switch (_p1.ctor) {
+								case 'Auto':
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								case 'Width1':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+								case 'Width2':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+								case 'Width3':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+								case 'Width4':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+								case 'Width5':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+								case 'Width6':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+								case 'Width7':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+								case 'Width8':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+								case 'Width9':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+								case 'Width10':
+									return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+								default:
+									return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+							}
+						}(),
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$tileParent = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isParent,
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p2 = width;
+						switch (_p2.ctor) {
+							case 'Auto':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Width1':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+							case 'Width2':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+							case 'Width3':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+							case 'Width4':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+							case 'Width5':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+							case 'Width6':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+							case 'Width7':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+							case 'Width8':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+							case 'Width9':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+							case 'Width10':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$tileAncestor = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isAncestor,
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p3 = width;
+						switch (_p3.ctor) {
+							case 'Auto':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Width1':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+							case 'Width2':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+							case 'Width3':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+							case 'Width4':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+							case 'Width5':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+							case 'Width6':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+							case 'Width7':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+							case 'Width8':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+							case 'Width9':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+							case 'Width10':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$verticalTile = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: _surprisetalk$elm_bulma$Bulma_Classes$isVertical,
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p4 = width;
+						switch (_p4.ctor) {
+							case 'Auto':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Width1':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+							case 'Width2':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+							case 'Width3':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+							case 'Width4':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+							case 'Width5':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+							case 'Width6':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+							case 'Width7':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+							case 'Width8':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+							case 'Width9':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+							case 'Width10':
+								return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+						}
+					}(),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$tile = function (width) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'div',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$tile,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p5 = width;
+					switch (_p5.ctor) {
+						case 'Auto':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Width1':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is1;
+						case 'Width2':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is2;
+						case 'Width3':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is3;
+						case 'Width4':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is4;
+						case 'Width5':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is5;
+						case 'Width6':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is6;
+						case 'Width7':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is7;
+						case 'Width8':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is8;
+						case 'Width9':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is9;
+						case 'Width10':
+							return _surprisetalk$elm_bulma$Bulma_Classes$is10;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$is11;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$footer = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'footer',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$footer,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$section = function (spacing) {
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'section',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$section,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p6 = spacing;
+					switch (_p6.ctor) {
+						case 'NotSpaced':
+							return _surprisetalk$elm_bulma$Bulma_Classes$none;
+						case 'Spaced':
+							return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+						default:
+							return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+					}
+				}(),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$heroFoot = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$heroFoot,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$heroBody = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$heroBody,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$heroHead = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$heroHead,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$heroModifiers = {bold: false, size: _surprisetalk$elm_bulma$Bulma_Modifiers$Small, color: _surprisetalk$elm_bulma$Bulma_Modifiers$Default};
+var _surprisetalk$elm_bulma$Bulma_Layout$hero = function (_p7) {
+	var _p8 = _p7;
+	return A2(
+		_surprisetalk$elm_bulma$Helpers$node,
+		'section',
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$hero,
+			_1: {
+				ctor: '::',
+				_0: function () {
+					var _p9 = _p8.bold;
+					if (_p9 === true) {
+						return _surprisetalk$elm_bulma$Bulma_Classes$isBold;
+					} else {
+						return _surprisetalk$elm_bulma$Bulma_Classes$none;
+					}
+				}(),
+				_1: {
+					ctor: '::',
+					_0: function () {
+						var _p10 = _p8.size;
+						switch (_p10.ctor) {
+							case 'Small':
+								return _surprisetalk$elm_bulma$Bulma_Classes$none;
+							case 'Standard':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isMedium;
+							case 'Medium':
+								return _surprisetalk$elm_bulma$Bulma_Classes$isLarge;
+							default:
+								return _surprisetalk$elm_bulma$Bulma_Classes$isFullHeight;
+						}
+					}(),
+					_1: {
+						ctor: '::',
+						_0: function () {
+							var _p11 = _p8.color;
+							switch (_p11.ctor) {
+								case 'Default':
+									return _surprisetalk$elm_bulma$Bulma_Classes$none;
+								case 'White':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isWhite;
+								case 'Black':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isBlack;
+								case 'Light':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isLight;
+								case 'Dark':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isDark;
+								case 'Primary':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isPrimary;
+								case 'Info':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isInfo;
+								case 'Success':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isSuccess;
+								case 'Warning':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isWarning;
+								case 'Danger':
+									return _surprisetalk$elm_bulma$Bulma_Classes$isDanger;
+								default:
+									return _surprisetalk$elm_bulma$Bulma_Classes$isLink;
+							}
+						}(),
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+};
+var _surprisetalk$elm_bulma$Bulma_Layout$easyHero = F3(
+	function (mods, attrs, _p12) {
+		var _p13 = _p12;
+		return A3(
+			_surprisetalk$elm_bulma$Bulma_Layout$hero,
+			mods,
+			attrs,
+			{
+				ctor: '::',
+				_0: _p13.head,
+				_1: {
+					ctor: '::',
+					_0: _p13.body,
+					_1: {
+						ctor: '::',
+						_0: _p13.foot,
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$mediaRight = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$mediaRight,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$mediaContent = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$mediaContent,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$mediaLeft = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$mediaLeft,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$media = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'article',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$media,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$levelItemLink = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'a',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$levelItem,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$levelItemText = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'p',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$levelItem,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$levelItem = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$levelItem,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$easyLevelItemWithHeading = F3(
+	function (attrs, heading, title) {
+		return A2(
+			_surprisetalk$elm_bulma$Bulma_Layout$levelItem,
+			attrs,
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$p,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('heading'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text(heading),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$p,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('title'),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(title),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}),
+				_1: {ctor: '[]'}
+			});
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$levelRight = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$levelRight,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$levelLeft = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$levelLeft,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$horizontalLevel = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'nav',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$level,
+		_1: {
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$isHorizontal,
+			_1: {ctor: '[]'}
+		}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$level = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'nav',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$level,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$centeredLevel = _surprisetalk$elm_bulma$Bulma_Layout$level;
+var _surprisetalk$elm_bulma$Bulma_Layout$fullHDContainer = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$container,
+		_1: {
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$isFullHD,
+			_1: {ctor: '[]'}
+		}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$widescreenContainer = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$container,
+		_1: {
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$isWidescreen,
+			_1: {ctor: '[]'}
+		}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$fluidContainer = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$container,
+		_1: {
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_Classes$isFluid,
+			_1: {ctor: '[]'}
+		}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$container = A2(
+	_surprisetalk$elm_bulma$Helpers$node,
+	'div',
+	{
+		ctor: '::',
+		_0: _surprisetalk$elm_bulma$Bulma_Classes$container,
+		_1: {ctor: '[]'}
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$HeroModifiers = F3(
+	function (a, b, c) {
+		return {bold: a, size: b, color: c};
+	});
+var _surprisetalk$elm_bulma$Bulma_Layout$VerySpaced = {ctor: 'VerySpaced'};
+var _surprisetalk$elm_bulma$Bulma_Layout$Spaced = {ctor: 'Spaced'};
+var _surprisetalk$elm_bulma$Bulma_Layout$NotSpaced = {ctor: 'NotSpaced'};
+var _user$project$Main$exampleColumns = A3(
+	_surprisetalk$elm_bulma$Bulma_Layout$section,
+	_surprisetalk$elm_bulma$Bulma_Layout$NotSpaced,
+	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: A2(
+			_surprisetalk$elm_bulma$Bulma_Layout$container,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: A3(
+					_surprisetalk$elm_bulma$Bulma_Columns$columns,
+					_surprisetalk$elm_bulma$Bulma_Columns$columnsModifiers,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A3(
+							_surprisetalk$elm_bulma$Bulma_Columns$column,
+							_surprisetalk$elm_bulma$Bulma_Columns$columnModifiers,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('First Column'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A3(
+								_surprisetalk$elm_bulma$Bulma_Columns$column,
+								_surprisetalk$elm_bulma$Bulma_Columns$columnModifiers,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Second Column'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A3(
+									_surprisetalk$elm_bulma$Bulma_Columns$column,
+									_surprisetalk$elm_bulma$Bulma_Columns$columnModifiers,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Third Column'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}),
+		_1: {ctor: '[]'}
+	});
+var _user$project$Main$exampleHero = A3(
+	_surprisetalk$elm_bulma$Bulma_Layout$hero,
+	_elm_lang$core$Native_Utils.update(
+		_surprisetalk$elm_bulma$Bulma_Layout$heroModifiers,
+		{size: _surprisetalk$elm_bulma$Bulma_Modifiers$Medium, color: _surprisetalk$elm_bulma$Bulma_Modifiers$Primary}),
+	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: A2(
+			_surprisetalk$elm_bulma$Bulma_Layout$heroBody,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: A2(
+					_surprisetalk$elm_bulma$Bulma_Layout$container,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A3(
+							_surprisetalk$elm_bulma$Bulma_Elements$title,
+							_surprisetalk$elm_bulma$Bulma_Elements$H1,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Hero Titlee'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A3(
+								_surprisetalk$elm_bulma$Bulma_Elements$title,
+								_surprisetalk$elm_bulma$Bulma_Elements$H2,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Hero Subtitle'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}),
+		_1: {ctor: '[]'}
+	});
+var _user$project$Main$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$main_,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _surprisetalk$elm_bulma$Bulma_CDN$stylesheet,
+			_1: {
+				ctor: '::',
+				_0: _user$project$Main$exampleHero,
+				_1: {
+					ctor: '::',
+					_0: _user$project$Main$exampleColumns,
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _user$project$Main$main = _elm_lang$html$Html$beginnerProgram(
+	{
+		model: {},
+		view: _user$project$Main$view,
+		update: F2(
+			function (msg, model) {
+				return model;
+			})
+	})();
+var _user$project$Main$Model = {};
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
 if (typeof _user$project$Main$main !== 'undefined') {
@@ -7833,4 +11445,4 @@ for (var publicModule in Elm)
 }
 
 }).call(this);
-
+</script></head><body><script type="text/javascript">Elm.Main.fullscreen()</script></body></html>
